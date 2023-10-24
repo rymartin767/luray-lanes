@@ -1,7 +1,27 @@
+/* FONTS */
+@import url(https://fonts.bunny.net/css?family=alexandria:400|figtree:400,500,600|bangers:400);
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
+.font-alex {
+    font-family: 'Alexandria', sans-serif;
+}
+
+.font-fig {
+    font-family: 'Figtree', sans-serif;
+}
+
+.font-bangers {
+    font-family: 'Bangers', display;
+}
+
+
 [x-cloak] {
     display: none;
+}
+
+.btn {
+    @apply bg-orange-500 text-white p-3 rounded-md;
 }

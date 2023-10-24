@@ -1,5 +1,6 @@
 <?php
 
+use App\Models\Event;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -14,8 +15,32 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
-});
+    return view('home', [
+        'events' => Event::where('is_on_homepage', true)->get(['title', 'images', 'slug'])
+    ]);
+})->name('home');
+
+Route::get('reservations', function () {
+    return view('reservations');
+})->name('reservations');
+
+Route::get('birthdays', function () {
+    return view('birthdays');
+})->name('birthdays');
+
+Route::get('specials', function () {
+    return view('specials', [
+        'events' => Event::where('is_visible', true)->with('faqs')->get()
+    ]);
+})->name('specials');
+
+Route::get('food', function () {
+    return view('food');
+})->name('food');
+
+Route::get('contact', function () {
+    return view('contact');
+})->name('contact');
 
 Route::middleware([
     'auth:sanctum',
