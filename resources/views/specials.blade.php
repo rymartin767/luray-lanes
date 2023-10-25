@@ -4,7 +4,7 @@
         <div class="flex flex-col">
             <div class="text-4xl font-bold text-center font-alex tracking-wide">BROWSE OUR</div>
             <div class="text-8xl font-bangers text-center text-purple-400">SPECIALS & EVENTS</div>
-            <img src="{{ asset('images/glow.webp') }}" alt="" class="mt-6 rounded-md">
+            <img src="{{ asset('images/jumbo-glow-bowling.webp') }}" alt="" class="mt-6 rounded-md">
         </div>
 
         @foreach ($events as $event)
@@ -13,12 +13,19 @@
                     <div class="col-span-4">
                         <div class="text-4xl font-bold text-center font-alex tracking-wide">{{ $event->title }}</div>
                     </div>
+
+                    @if ($event->description != null)
+                        <div class="col-span-4 bg-white rounded-md p-3">
+                            <div>
+                                {{ $event->description }}
+                            </div>
+                        </div>
+                    @endif
+                    
                     <div class="col-span-4 md:col-span-1 mt-3">
-                        <div class="flex flex-col text-center border-4 border-purple-600 p-8">
-                            <div class="font-alex uppercase text-3xl">All you can play</div>
-                            <div class="uppercase text-pink-500">Create the perfect day</div>
-                            <div class="mt-3 text-xl">Starting at $11.99</div>
-                            <button class="mt-4 bg-purple-600 text-white p-3 rounded-sm">LEARN MORE</button>
+                        <div class="flex flex-col space-y-3 text-center border-2 border-purple-500 rounded-md bg-white p-8">
+                            <div class="font-alex uppercase text-3xl">{{ $event->title }}</div>
+                            <div class="uppercase text-pink-500">See our list of FAQs for additional information!</div>
                         </div>
                     </div>
                     <div class="col-span-4 md:col-span-3 mt-3">

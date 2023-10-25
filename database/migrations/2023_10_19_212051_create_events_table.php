@@ -19,7 +19,7 @@ return new class extends Migration
             $table->dateTime('start_date')->nullable();
             $table->dateTime('end_date')->nullable();
             $table->json('images')->nullable();
-            $table->text('description');
+            $table->text('description')->nullable();
             $table->string('slug');
             $table->timestamps();
         });

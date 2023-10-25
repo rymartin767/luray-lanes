@@ -4,7 +4,7 @@
         <div class="flex flex-col">
             <div class="text-4xl font-bold text-center font-alex tracking-wide">EASY FOR PARENTS</div>
             <div class="text-8xl font-bangers text-center text-purple-400">AWESOME FOR KIDS</div>
-            <img src="{{ asset('images/birthday.webp') }}" alt="" class="mt-6 rounded-md">
+            <img src="{{ asset('images/jumbo-birthday.webp') }}" alt="" class="mt-6 rounded-md">
         </div>
     
         <section>

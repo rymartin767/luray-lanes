@@ -64,6 +64,10 @@
                                     {{ __('Profile') }}
                                 </x-dropdown-link>
 
+                                <x-dropdown-link href="{{ route('filament.admin.pages.dashboard') }}">
+                                    {{ __('Admin Panel') }}
+                                </x-dropdown-link>
+
                                 <div class="border-t border-gray-200 dark:border-gray-600"></div>
 
                                 <!-- Authentication -->
@@ -99,36 +103,51 @@
             <x-responsive-nav-link href="{{ route('home') }}" :active="request()->routeIs('home')">
                 {{ __('Home') }}
             </x-responsive-nav-link>
+            <x-responsive-nav-link href="{{ route('reservations') }}" :active="request()->routeIs('reservations')">
+                {{ __('Reserve A Lane') }}
+            </x-responsive-nav-link>
             <x-responsive-nav-link href="{{ route('birthdays') }}" :active="request()->routeIs('birthdays')">
-                {{ __('Birthday Parties') }}
+                {{ __('Birthdays') }}
+            </x-responsive-nav-link>
+            <x-responsive-nav-link href="{{ route('specials') }}" :active="request()->routeIs('specials')">
+                {{ __('Specials & Events') }}
+            </x-responsive-nav-link>
+            <x-responsive-nav-link href="{{ route('food') }}" :active="request()->routeIs('food')">
+                {{ __('Food & Bar') }}
             </x-responsive-nav-link>
         </div>
 
         <!-- Responsive Settings Options -->
-        <div class="pt-4 pb-1 border-t border-gray-200 dark:border-gray-600">
-            <div class="flex items-center px-4">
-                <div>
-                    <div class="font-medium text-base text-gray-800 dark:text-gray-200">{{ Auth::user()->name?? 'Guest' }}</div>
-                    <div class="font-medium text-sm text-gray-500">admin@lurylanes.com</div>
+        @auth
+            <div class="pt-4 pb-1 border-t border-gray-200 dark:border-gray-600">
+                <div class="flex items-center px-4">
+                    <div>
+                        <div class="font-medium text-base text-gray-800 dark:text-gray-200">{{ Auth::user()->name?? 'Guest' }}</div>
+                        <div class="font-medium text-sm text-gray-500">admin@lurylanes.com</div>
+                    </div>
+                </div>
+
+                <div class="mt-3 space-y-1">
+                    <!-- Account Management -->
+                    <x-responsive-nav-link href="{{ route('profile.show') }}" :active="request()->routeIs('profile.show')">
+                        {{ __('Profile') }}
+                    </x-responsive-nav-link>
+
+                    <x-responsive-nav-link href="{{ route('filament.admin.pages.dashboard') }}" :active="request()->routeIs('filament.admin.pages.dashboard')">
+                        {{ __('Admin Panel') }}
+                    </x-responsive-nav-link>
+
+                    <!-- Authentication -->
+                    <form method="POST" action="{{ route('logout') }}" x-data>
+                        @csrf
+
+                        <x-responsive-nav-link href="{{ route('logout') }}"
+                                    @click.prevent="$root.submit();">
+                            {{ __('Log Out') }}
+                        </x-responsive-nav-link>
+                    </form>
                 </div>
             </div>
-
-            <div class="mt-3 space-y-1">
-                <!-- Account Management -->
-                <x-responsive-nav-link href="{{ route('profile.show') }}" :active="request()->routeIs('profile.show')">
-                    {{ __('Profile') }}
-                </x-responsive-nav-link>
-
-                <!-- Authentication -->
-                <form method="POST" action="{{ route('logout') }}" x-data>
-                    @csrf
-
-                    <x-responsive-nav-link href="{{ route('logout') }}"
-                                   @click.prevent="$root.submit();">
-                        {{ __('Log Out') }}
-                    </x-responsive-nav-link>
-                </form>
-            </div>
-        </div>
+        @endauth
     </div>
 </nav>

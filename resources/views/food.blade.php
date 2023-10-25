@@ -14,7 +14,7 @@
                         <div x-data="{ show: false }">
 
                             <!-- Modal toggle -->
-                            <button type="button" @click="show = true" data-modal-target="defaultModal" data-modal-toggle="defaultModal" class="block text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800" type="button">
+                            <button type="button" @click="show = true" data-modal-target="defaultModal" data-modal-toggle="defaultModal" class="block text-white bg-orange-400 hover:bg-orange-500 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800" type="button">
                                 SNACK COUNTER | FOOD
                             </button>
 
@@ -26,7 +26,7 @@
                                         <!-- Modal header -->
                                         <div class="flex items-start justify-between p-4 border-b rounded-t dark:border-gray-600">
                                             <h3 class="text-xl font-semibold text-gray-900 dark:text-white">
-                                                Snack Counter | Bar
+                                                Snack Counter | Food
                                             </h3>
                                             <button type="button" @click="show=false" class="text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm w-8 h-8 ml-auto inline-flex justify-center items-center dark:hover:bg-gray-600 dark:hover:text-white" data-modal-hide="defaultModal">
                                                 <svg class="w-3 h-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 14">
@@ -38,27 +38,12 @@
                                         <!-- Modal body -->
                                         <div class="p-6 space-y-3">
                                             <div>
-                                                <div>BEER</div>
-                                                <ul>
-                                                    <li>Cans of Beer | $2.50</li>
-                                                    <li>Bottles of Beer | $3 - $4</li>
-                                                    <li>Standard Bucket | $14</li>
-                                                    <li>Specialty Bucket | $18</li>
-                                                </ul>
-                                            </div>
-                                            <div>
-                                                <div>LIQUOR</div>
-                                                <ul>
-                                                    <li>Wine Coolers | $4</li>
-                                                    <li>Shots | $4</li>
-                                                    <li>Mixed Drinks | $5.57</li>
-                                                    <li>Mixed Drinks (Double Shot) | $8</li>
-                                                </ul>
+                                                <div>See flyer for our full menu!</div>
                                             </div>
                                         </div>
                                         <!-- Modal footer -->
                                         <div class="flex items-center p-6 space-x-2 border-t border-gray-200 rounded-b dark:border-gray-600">
-                                            <button @click="show=false" data-modal-hide="defaultModal" type="button" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">CLOSE</button>
+                                            <button @click="show=false" data-modal-hide="defaultModal" type="button" class="text-white bg-orange-400 hover:bg-orange-500 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">CLOSE</button>
                                         </div>
                                     </div>
                                 </div>
@@ -76,7 +61,7 @@
                         <div x-data="{ show: false }">
 
                             <!-- Modal toggle -->
-                            <button type="button" @click="show = true" data-modal-target="defaultModal" data-modal-toggle="defaultModal" class="block text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800" type="button">
+                            <button type="button" @click="show = true" data-modal-target="defaultModal" data-modal-toggle="defaultModal" class="block text-white bg-orange-400 hover:bg-orange-500 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800" type="button">
                                 SNACK COUNTER | BAR
                             </button>
 
@@ -119,7 +104,7 @@
                                         </div>
                                         <!-- Modal footer -->
                                         <div class="flex items-center p-6 space-x-2 border-t border-gray-200 rounded-b dark:border-gray-600">
-                                            <button @click="show=false" data-modal-hide="defaultModal" type="button" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">CLOSE</button>
+                                            <button @click="show=false" data-modal-hide="defaultModal" type="button" class="text-white bg-orange-400 hover:bg-orange-500 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">CLOSE</button>
                                         </div>
                                     </div>
                                 </div>
@@ -137,7 +122,7 @@
                         <div x-data="{ show: false }">
 
                             <!-- Modal toggle -->
-                            <button type="button" @click="show = true" data-modal-target="defaultModal" data-modal-toggle="defaultModal" class="block text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800" type="button">
+                            <button type="button" @click="show = true" data-modal-target="defaultModal" data-modal-toggle="defaultModal" class="block text-white bg-orange-400 hover:bg-orange-500 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800" type="button">
                                 GIONINO'S PIZZA
                             </button>
 
@@ -171,7 +156,7 @@
                                         </div>
                                         <!-- Modal footer -->
                                         <div class="flex items-center p-6 space-x-2 border-t border-gray-200 rounded-b dark:border-gray-600">
-                                            <button @click="show=false" data-modal-hide="defaultModal" type="button" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">CLOSE</button>
+                                            <button @click="show=false" data-modal-hide="defaultModal" type="button" class="text-white bg-orange-400 hover:bg-orange-500 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">CLOSE</button>
                                         </div>
                                     </div>
                                 </div>
@@ -198,7 +183,7 @@
                             <img src="{{ asset('images/fries.jpg') }}" alt="" class="rounded-md">
                         </div>
                         <div class="col-span-1">
-                            <img src="{{ asset('images/beers.webp') }}" alt="" class="rounded-md">
+                            <img src="{{ asset('images/burger.jpg') }}" alt="" class="rounded-md">
                         </div>
                     </div>
                 </div>

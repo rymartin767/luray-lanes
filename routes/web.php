@@ -1,6 +1,7 @@
 <?php
 
 use App\Models\Event;
+use App\Models\Faq;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -41,6 +42,10 @@ Route::get('food', function () {
 Route::get('contact', function () {
     return view('contact');
 })->name('contact');
+
+Route::get('newsletter-joined', function () {
+    dd('in the web file');
+})->name('newsletter');
 
 Route::middleware([
     'auth:sanctum',
