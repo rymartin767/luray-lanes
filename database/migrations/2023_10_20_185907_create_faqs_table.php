@@ -13,7 +13,7 @@ return new class extends Migration
     {
         Schema::create('faqs', function (Blueprint $table) {
             $table->id();
-            $table->foreignId('event_id')->constrained()->nullOnDelete();
+            $table->foreignId('event_id')->nullable()->constrained()->nullOnDelete();
             $table->string('question');
             $table->string('answer');
             $table->timestamps();
