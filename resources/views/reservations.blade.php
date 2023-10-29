@@ -9,12 +9,12 @@
 
             <div class="text-center p-3 mt-6">
                 <!-- <a role="button" href="https://www.mybowlingpassport.com/2548/7389/book" target="_blank" class="btn">CLICK HERE TO MAKE A RESERVATION</a> -->
-                <a role="button" href="#" target="_blank" class="btn">ONLINE RESERVATIONS - COMING SOON!</a>
+                <a role="button" href="" class="btn">ONLINE RESERVATIONS - COMING SOON!</a>
             </div>
 
             @php
                 $faqs = collect([
-                    ['id' => 1, 'question' => 'When can I make an online reservation?', 'answer' => 'We expect online reservations to be available on November 1st.'],
+                    ['id' => 1, 'question' => 'When can I make an online reservation?', 'answer' => 'We expect online reservations to be available in November 2023'],
                 ]);
             @endphp
 

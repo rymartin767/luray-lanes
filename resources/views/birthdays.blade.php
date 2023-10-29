@@ -30,8 +30,7 @@
                             <li>Rental Shoes</li>
                             <li>One Pitcher of soda</li>
                         </ul>
-                        <div class="text-xl">All for only $60</div>
-                        <div class="text-3xl text-pink-500">SEE FAQs BELOW</div>
+                        <div class="text-3xl text-pink-500">ALL FOR ONLY $60!</div>
                     </div>
                 </div>
                 <div class="col-span-4 md:col-span-1 mt-6 bg-white border-4 border-purple-600 rounded-xl shadow-lg">

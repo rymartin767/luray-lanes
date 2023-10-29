@@ -32,14 +32,6 @@
             </div>
             <div class="col-span-5 lg:col-span-1 shadow-md rounded-md overflow-hidden">
                 <div class="flex flex-col flex-wrap h-full">
-                    <img src="{{ asset('images/glow.webp') }}" alt="">
-                    <div class="flex flex-col flex-grow flex-wrap p-3 bg-white place-content-center">
-                        <div class="text-2xl font-semibold text-center font-fig">CORPORATE EVENTS</div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-span-5 lg:col-span-1 shadow-md rounded-md overflow-hidden">
-                <div class="flex flex-col flex-wrap h-full">
                     <img src="{{ asset('images/pizza.webp') }}" alt="">
                     <div class="flex flex-col flex-grow flex-wrap p-3 bg-white place-content-center">
                         <div role="button" class="w-full text-xl font-semibold text-center font-fig bg-gradient-to-r from-orange-300 to-orange-500 px-5 py-1 text-white hover:text-black rounded-lg">
@@ -229,7 +221,7 @@
         </section>
 
         <!-- NEWSLETTER -->
-        <livewire:newsletter />
+        
     </div>
 
 </x-app-layout>
