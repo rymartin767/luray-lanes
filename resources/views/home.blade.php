@@ -52,13 +52,6 @@
             </div>
         </section>
 
-        <!-- EAT.DRINK.BOWL -->
-        <div class="text-6xl text-center font-alex">
-            <span class="text-black">EAT.</span>
-            <span class="text-gray-400">DRINK.</span>
-            <span class="text-orange-500">BOWL.</span>
-        </div>
-
         <!-- OPEN BOWLING -->
         <section class="grid grid-cols-3 px-6 lg:px-0 gap-3">
             <div class="col-span-3">
@@ -190,32 +183,44 @@
         </section>
 
         <!-- FLYERS -->
-        <section class="grid grid-cols-3 px-6 lg:px-0 gap-3">
-            <div class="col-span-3">
+        <section class="grid grid-cols-4 px-6 lg:px-0 gap-3">
+            <div class="col-span-4">
                 <div class="text-4xl font-alex border-l-4 border-orange-500 pl-3">FEATURED FLYERS</div>
             </div>
 
-            <div class="col-span-3 md:col-span-1 shadow-md rounded-md overflow-hidden">
+            <div class="col-span-4 my-3 bg-white rounded-lg py-3 border border-gray-50 shadow-sm">
+                <div class="text-6xl text-center font-alex">
+                    <span class="text-black">EAT.</span>
+                    <span class="text-gray-400">DRINK.</span>
+                    <span class="text-orange-500">BOWL.</span>
+                </div>
+            </div>
+
+            <div class="col-span-4 md:col-span-1 shadow-md rounded-md overflow-hidden">
                 <img src="{{ asset('site-images/bowling-pass-flyer.jpg') }}" alt="" loading="lazy">
             </div>
 
-            <div class="col-span-3 md:col-span-1 shadow-md rounded-md overflow-hidden">
+            <div class="col-span-4 md:col-span-1 shadow-md rounded-md overflow-hidden">
+                <img src="{{ asset('site-images/buckets.jpg') }}" alt="" loading="lazy">
+            </div>
+
+            <div class="col-span-4 md:col-span-1 shadow-md rounded-md overflow-hidden">
                 <img src="{{ asset('site-images/birthday-flyer.jpg') }}" alt="" loading="lazy">
             </div>
 
-            <div class="col-span-3 md:col-span-1 shadow-md rounded-md overflow-hidden">
+            <div class="col-span-4 md:col-span-1 shadow-md rounded-md overflow-hidden">
                 <img src="{{ asset('site-images/senior-special-flyer.jpg') }}" alt="" loading="lazy">
             </div>
 
-            <div class="col-span-3 md:col-span-1 shadow-md rounded-md overflow-hidden">
+            <div class="col-span-4 md:col-span-1 shadow-md rounded-md overflow-hidden">
                 <img src="{{ asset('site-images/all-you-can-bowl-flyer.jpg') }}" alt="" loading="lazy">
             </div>
 
-            <div class="col-span-3 md:col-span-1 shadow-md rounded-md overflow-hidden">
+            <div class="col-span-4 md:col-span-1 shadow-md rounded-md overflow-hidden">
                 <img src="{{ asset('site-images/family-fun-day-flyer.jpg') }}" alt="" loading="lazy">
             </div>
 
-            <div class="col-span-3 md:col-span-1 shadow-md rounded-md overflow-hidden">
+            <div class="col-span-4 md:col-span-1 shadow-md rounded-md overflow-hidden">
                 <img src="{{ asset('site-images/cosmic-flyer.jpg') }}" alt="" loading="lazy">
             </div>
         </section>
