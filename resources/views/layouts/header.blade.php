@@ -10,7 +10,7 @@
         <div class="flex flex-col text-center">
             <div class="text-4xl font-bold text-center font-alex tracking-wide">BOWL AT</div>
             <div class="text-4xl font-bold text-center font-alex tracking-wide">LURAY LANES</div>
-            <img src="{{ asset('images/logo.jpg') }}" alt="" class="h-36 w-36 mx-auto mt-4">
+            <img src="{{ asset('site-images/logo.jpg') }}" alt="" class="h-36 w-36 mx-auto mt-4">
         </div>
     </div>
     <div class="col-span-3 md:col-span-1 flex flex-wrap content-center">

@@ -4,7 +4,7 @@
             <div class="flex flex-col">
                 <div class="text-4xl font-bold text-center font-alex tracking-wide">EASY ONLINE</div>
                 <div class="text-8xl font-bangers text-center text-orange-500">RESERVATIONS</div>
-                <img src="{{ asset('images/reservations.jpg') }}" alt="" class="mt-6 rounded-md">
+                <img src="{{ asset('site-images/reservations.jpg') }}" alt="" class="mt-6 rounded-md">
             </div>
 
             <div class="text-center p-3 mt-6">

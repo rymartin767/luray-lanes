@@ -16,6 +16,7 @@ class Newsletter extends Component
     public function formSubmitted()
     {
         // save email to newsletter db
-        redirect(route('newsletter'));
+        session()->flash('flash.banner', 'Successfully subscribed!.');
+        return $this->redirect('/');
     }
 }

@@ -3,7 +3,7 @@
     @include('layouts.header')
 
     <div class="max-w-7xl mx-auto flex flex-col space-y-12">
-        <img src="{{ asset('images/wall.jpg') }}" alt="">
+        <img src="{{ asset('site-images/wall.jpg') }}" alt="">
 
         <!-- ATTRACTIONS -->
         <section class="grid grid-cols-5 px-6 lg:px-0 gap-3">
@@ -12,7 +12,7 @@
             </div>
             <div class="col-span-5 lg:col-span-1 shadow-md rounded-md overflow-hidden bg-pink-200">
                 <div class="flex flex-col flex-wrap h-full">
-                    <img src="{{ asset('images/league.webp') }}" alt="">
+                    <img src="{{ asset('site-images/league.webp') }}" alt="">
                     <div class="flex flex-col flex-grow flex-wrap p-3 bg-white place-content-center">
                         <div role="button" class="w-full text-xl font-semibold text-center font-fig bg-gradient-to-r from-orange-300 to-orange-500 px-5 py-1 text-white hover:text-black rounded-lg">
                             <a href="{{ route('reservations') }}">RESERVE A LANE</a>
@@ -22,7 +22,7 @@
             </div>
             <div class="col-span-5 lg:col-span-1 shadow-md rounded-md overflow-hidden">
                 <div class="flex flex-col flex-wrap h-full">
-                    <img src="{{ asset('images/birthday.webp') }}" alt="">
+                    <img src="{{ asset('site-images/birthday.webp') }}" alt="">
                     <div class="flex flex-col flex-grow flex-wrap p-3 bg-white place-content-center">
                         <div role="button" class="w-full text-xl font-semibold text-center font-fig bg-gradient-to-r from-orange-300 to-orange-500 px-5 py-1 text-white hover:text-black rounded-lg">
                             <a href="{{ route('birthdays') }}">BIRTHDAY PARTIES</a>
@@ -32,7 +32,7 @@
             </div>
             <div class="col-span-5 lg:col-span-1 shadow-md rounded-md overflow-hidden">
                 <div class="flex flex-col flex-wrap h-full">
-                    <img src="{{ asset('images/pizza.webp') }}" alt="">
+                    <img src="{{ asset('site-images/pizza.webp') }}" alt="">
                     <div class="flex flex-col flex-grow flex-wrap p-3 bg-white place-content-center">
                         <div role="button" class="w-full text-xl font-semibold text-center font-fig bg-gradient-to-r from-orange-300 to-orange-500 px-5 py-1 text-white hover:text-black rounded-lg">
                             <a href="{{ route('food') }}">OUR FOOD & BAR</a>
@@ -42,7 +42,7 @@
             </div>
             <div class="col-span-5 lg:col-span-1 shadow-md rounded-md overflow-hidden">
                 <div class="flex flex-col flex-wrap h-full">
-                    <img src="{{ asset('images/glow.webp') }}" alt="">
+                    <img src="{{ asset('site-images/glow.webp') }}" alt="">
                     <div class="flex flex-col flex-grow flex-wrap p-3 bg-white place-content-center">
                         <div role="button" class="w-full text-xl font-semibold text-center font-fig bg-gradient-to-r from-orange-300 to-orange-500 px-5 py-1 text-white hover:text-black rounded-lg">
                             <a href="specials/#cosmic-glow-bowling">COSMIC GLOW BOWLING</a>
@@ -196,27 +196,27 @@
             </div>
 
             <div class="col-span-3 md:col-span-1 shadow-md rounded-md overflow-hidden">
-                <img src="{{ asset('images/bowling-pass-flyer.jpg') }}" alt="" loading="lazy">
+                <img src="{{ asset('site-images/bowling-pass-flyer.jpg') }}" alt="" loading="lazy">
             </div>
 
             <div class="col-span-3 md:col-span-1 shadow-md rounded-md overflow-hidden">
-                <img src="{{ asset('images/birthday-flyer.jpg') }}" alt="" loading="lazy">
+                <img src="{{ asset('site-images/birthday-flyer.jpg') }}" alt="" loading="lazy">
             </div>
 
             <div class="col-span-3 md:col-span-1 shadow-md rounded-md overflow-hidden">
-                <img src="{{ asset('images/senior-special-flyer.jpg') }}" alt="" loading="lazy">
+                <img src="{{ asset('site-images/senior-special-flyer.jpg') }}" alt="" loading="lazy">
             </div>
 
             <div class="col-span-3 md:col-span-1 shadow-md rounded-md overflow-hidden">
-                <img src="{{ asset('images/all-you-can-bowl-flyer.jpg') }}" alt="" loading="lazy">
+                <img src="{{ asset('site-images/all-you-can-bowl-flyer.jpg') }}" alt="" loading="lazy">
             </div>
 
             <div class="col-span-3 md:col-span-1 shadow-md rounded-md overflow-hidden">
-                <img src="{{ asset('images/family-fun-day-flyer.jpg') }}" alt="" loading="lazy">
+                <img src="{{ asset('site-images/family-fun-day-flyer.jpg') }}" alt="" loading="lazy">
             </div>
 
             <div class="col-span-3 md:col-span-1 shadow-md rounded-md overflow-hidden">
-                <img src="{{ asset('images/cosmic-flyer.jpg') }}" alt="" loading="lazy">
+                <img src="{{ asset('site-images/cosmic-flyer.jpg') }}" alt="" loading="lazy">
             </div>
         </section>
 

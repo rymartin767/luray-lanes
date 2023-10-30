@@ -19,6 +19,8 @@
     <div class="min-h-screen bg-gray-100 dark:bg-gray-900">
         @livewire('navigation-menu')
 
+        <x-banner></x-banner>
+        
         <!-- Page Content -->
         <main>
             {{ $slot }}

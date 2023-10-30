@@ -169,26 +169,26 @@
                     
                 </div>
                 <div class="col-span-1">
-                    <img src="{{ asset('images/menu.jpg') }}" alt="" class="rounded-md">
+                    <img src="{{ asset('site-images/menu.jpg') }}" alt="" class="rounded-md">
                 </div>
                 <div class="col-span-2">
                     <div class="grid grid-cols-4 gap-3">
                         <div class="col-span-1">
-                            <img src="{{ asset('images/beers.webp') }}" alt="" class="rounded-md">
+                            <img src="{{ asset('site-images/beers.webp') }}" alt="" class="rounded-md">
                         </div>
                         <div class="col-span-1">
-                            <img src="{{ asset('images/stix.jpg') }}" alt="" class="rounded-md">
+                            <img src="{{ asset('site-images/stix.jpg') }}" alt="" class="rounded-md">
                         </div>
                         <div class="col-span-1">
-                            <img src="{{ asset('images/fries.jpg') }}" alt="" class="rounded-md">
+                            <img src="{{ asset('site-images/fries.jpg') }}" alt="" class="rounded-md">
                         </div>
                         <div class="col-span-1">
-                            <img src="{{ asset('images/burger.jpg') }}" alt="" class="rounded-md">
+                            <img src="{{ asset('site-images/burger.jpg') }}" alt="" class="rounded-md">
                         </div>
                     </div>
                 </div>
                 <div class="col-span-1">
-                    <img src="{{ asset('images/buckets.jpg') }}" alt="" class="rounded-md">
+                    <img src="{{ asset('site-images/buckets.jpg') }}" alt="" class="rounded-md">
                 </div>
             </div>
         </div>

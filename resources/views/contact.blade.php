@@ -1,5 +1,5 @@
 <x-app-layout>
-    <section class="max-w-3xl mx-auto pt-8">
+    <section class="max-w-3xl mx-auto py-8 bg-white rounded-md mt-6">
 
         <ol class="relative border-l border-gray-200 dark:border-gray-700">
             <li class="mb-10 ml-6">
@@ -47,7 +47,7 @@
                 <h3 class="mb-1 text-lg font-semibold text-gray-900 dark:text-white">Our newsletter</h3>
                 <div class="block mb-2 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">Monthly events & specials</div>
                 <div class="text-base font-normal text-gray-500 dark:text-gray-400">
-                    <div><a href="home#newsletter">Click to join</a></div>
+                    <div><a href="/#newsletter">Click to join</a></div>
                 </div>
             </li>
         </ol>
