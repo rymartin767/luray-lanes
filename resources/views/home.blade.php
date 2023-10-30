@@ -221,7 +221,7 @@
         </section>
 
         <!-- NEWSLETTER -->
-        
+        <livewire:newsletter />
     </div>
 
 </x-app-layout>
