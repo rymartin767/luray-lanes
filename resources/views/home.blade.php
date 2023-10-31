@@ -146,15 +146,16 @@
                 <!-- MOBILE -->
                 <div class="block lg:hidden">
                     <div class="grid grid-cols-2 gap-3">
-                        <div class="col-span-2 bg-orange-500 text-white rounded-lg p-3 text-center">
-                            <div class="text-xl font-bold font-alex mb-3">MON-FRI OPEN BOWLING</div>
+                        <div class="col-span-2 bg-white shadow-md rounded-lg p-3 text-center">
+                            <div class="text-xl text-orange-500 font-bold font-alex mb-3">MON-FRI OPEN BOWLING</div>
                             <div>$5/GAME</div>
                             <div>$30/LANE PER HOUR</div>
                         </div>
-                        <div class="col-span-2 bg-orange-500 text-white rounded-lg p-3 text-center">
-                            <div class="text-xl font-bold font-alex mb-3">ALL YOU CAN BOWL FOR 2 HOURS</div>
+                        <div class="col-span-2 bg-white shadow-md rounded-lg p-3 text-center">
+                            <div class="text-xl text-orange-500 font-bold font-alex">ALL YOU CAN BOWL</div>
+                            <div class="text-xl text-orange-500 font-bold font-alex mb-3">2 HOURS</div>
                             <div>$5/PER PERSON</div>
-                            <div class="text-sm italic">Monday 5-9P / Wednesday 3-9P / Thursday 4-9P</div>
+                            <div class="text-xs italic text-gray-500">Monday 5-9P / Wednesday 3-9P / Thursday 4-9P</div>
                         </div>
                     </div>
                 </div>
@@ -170,7 +171,7 @@
             @forelse ($events as $event)
                 <div class="col-span-3 md:col-span-1 shadow-md rounded-md overflow-hidden">
                     <div class="flex flex-col">
-                        <img src="{{ Str::of($event->images[0])->after('public/') }}" alt="" loading="lazy">
+                        <img src="{{ $event->awsUrl() }}" alt="" loading="lazy">
                         <div class="flex flex-col p-4 bg-white space-y-3">
                             <div class="text-2xl font-fig text-center font-bold uppercase">{{ $event->title }}</div>
                             <a role="button" href="/specials#{{ $event->slug }}" class="btn text-center">CLICK HERE FOR DETAILS</a>
@@ -188,7 +189,7 @@
                 <div class="text-4xl font-alex border-l-4 border-orange-500 pl-3">FEATURED FLYERS</div>
             </div>
 
-            <div class="col-span-4 my-3 bg-white rounded-lg py-3 border border-gray-50 shadow-sm">
+            <div class="hidden lg:block col-span-4 my-3 bg-white rounded-lg py-3 border border-gray-50 shadow-sm">
                 <div class="text-6xl text-center font-alex">
                     <span class="text-black">EAT.</span>
                     <span class="text-gray-400">DRINK.</span>

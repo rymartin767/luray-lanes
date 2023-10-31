@@ -20,9 +20,9 @@
                         <div class="text-xl">$18</div>
                     </div>
                 </div>
-                <div class="col-span-4 md:col-span-2 mt-6 bg-white rounded-xl shadow-lg">
-                    <div class="flex flex-col text-center p-6">
-                        <div class="font-alex uppercase text-3xl">The "Strike" Package</div>
+                <div class="flex flex-wrap content-center col-span-4 md:col-span-2 mt-6 bg-white rounded-xl shadow-lg p-2">
+                    <div class="flex flex-col text-center p-6 w-full">
+                        <div class="font-alex uppercase text-4xl">The "Strike" Package</div>
                         <div class="uppercase text-orange-500">Create the perfect day</div>
                         <ul class="py-4 list-inside list-disc">
                             <li>One Lane for 1 Hour of bowling</li>
@@ -30,16 +30,17 @@
                             <li>Rental Shoes</li>
                             <li>One Pitcher of soda</li>
                         </ul>
-                        <div class="text-3xl text-orange-500 font-bold">ALL FOR ONLY $60!</div>
+                        <div class="text-3xl text-orange-500 font-bold">ALL FOR</div>
+                        <div class="text-8xl text-orange-500 font-bold">$60!</div>
                     </div>
                 </div>
                 <div class="col-span-4 md:col-span-1 mt-6 bg-white rounded-xl shadow-lg">
                     <div class="flex flex-col text-center p-6">
-                        <div class="font-alex uppercase text-xl">Pin Sipper Cup</div>
+                        <div class="font-alex uppercase text-xl mb-2">Pin Sipper Cup</div>
+                        <img src="{{ asset('site-images/sipper.webp') }}" alt="" class="rounded-md shadow-sm">
                         <div class="uppercase text-orange-500">GIFT ITEMS</div>
-                        
-                        <div class="text-xl">$8.50 Each (Empty)</div>
-                        <div class="text-xl">$9.50 Each (w/Soda)</div>
+                        <div class="text-sm italic text-gray-400">$8.50 Each (Empty)</div>
+                        <div class="text-sm italic text-gray-400">$9.50 Each (w/Soda)</div>
                     </div>
                 </div>
             </div>

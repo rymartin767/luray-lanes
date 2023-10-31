@@ -31,6 +31,11 @@ class Event extends Model
         });
     }
 
+    public function awsUrl() : string
+    {
+        return Storage::disk('s3')->url($this->images[0]);
+    }
+
     public function faqs() : Relation
     {
         return $this->hasMany(Faq::class, 'event_id', 'id');

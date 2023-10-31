@@ -4,11 +4,11 @@
         <div class="flex flex-col">
             <div class="text-2xl lg:text-4xl font-bold text-center font-alex tracking-wide">BROWSE OUR</div>
             <div class="text-5xl lg:text-8xl font-bangers text-center text-purple-400">SPECIALS & EVENTS</div>
-            <img src="{{ asset('site-images/jumbo-glow-bowling.webp') }}" alt="" class="mt-6 rounded-md">
+            <img src="{{ asset('site-images/jumbo-glow-bowling.webp') }}" alt="Glow Bowling Image" class="mt-6 rounded-md">
         </div>
 
         @foreach ($events as $event)
-            <section class="">
+            <section class="px-6 lg:px-0">
                 <div id="{{ $event->slug }}" class="grid grid-cols-4 gap-3">
                     <div class="col-span-4">
                         <div class="text-4xl font-bold text-center font-alex tracking-wide">{{ $event->title }}</div>
