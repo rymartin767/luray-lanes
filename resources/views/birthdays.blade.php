@@ -2,7 +2,7 @@
     <div class="py-12 max-w-5xl mx-auto space-y-10">
 
         <div class="flex flex-col">
-            <div class="text-2xl lg:text-4xl font-bold text-center font-alex tracking-wide">EASY FOR PARENTS</div>
+            <div class="text-2xl lg:text-4xl font-bold text-center font-alex tracking-wide dark:text-gray-400">EASY FOR PARENTS</div>
             <div class="text-6xl lg:text-8xl font-bangers text-center text-purple-400">AWESOME FOR KIDS</div>
             <img src="{{ asset('site-images/jumbo-birthday.webp') }}" alt="" class="mt-6 rounded-md">
         </div>

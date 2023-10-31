@@ -2,7 +2,7 @@
     <div class="py-12 max-w-5xl mx-auto space-y-10">
 
         <div class="flex flex-col">
-            <div class="text-2xl lg:text-4xl font-bold text-center font-alex tracking-wide">BROWSE OUR</div>
+            <div class="text-2xl lg:text-4xl font-bold text-center font-alex tracking-wide dark:text-gray-400">BROWSE OUR</div>
             <div class="text-6xl lg:text-8xl font-bangers text-center text-orange-500">FULL MENU & BAR</div>
         </div>
 
@@ -16,7 +16,7 @@
                         <div x-data="{ show: false }">
 
                             <!-- Modal toggle -->
-                            <button type="button" @click="show = true" data-modal-target="defaultModal" data-modal-toggle="defaultModal" class="block text-orange-500 bg-white hover:bg-orange-500 hover:text-white focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800" type="button">
+                            <button type="button" @click="show = true" data-modal-target="defaultModal" data-modal-toggle="defaultModal" class="block text-orange-500 bg-white hover:bg-orange-500 hover:text-white focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-gray-600" type="button">
                                 SNACK COUNTER | BAR
                             </button>
 
@@ -59,7 +59,7 @@
                                         </div>
                                         <!-- Modal footer -->
                                         <div class="flex items-center p-6 space-x-2 border-t border-gray-200 rounded-b dark:border-gray-600">
-                                            <button @click="show=false" data-modal-hide="defaultModal" type="button" class="text-white bg-orange-400 hover:bg-orange-500 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">CLOSE</button>
+                                            <button @click="show=false" data-modal-hide="defaultModal" type="button" class="text-white bg-orange-400 hover:bg-orange-500 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-gray-500">CLOSE</button>
                                         </div>
                                     </div>
                                 </div>
@@ -77,7 +77,7 @@
                         <div x-data="{ show: false }">
 
                             <!-- Modal toggle -->
-                            <button type="button" @click="show = true" data-modal-target="defaultModal" data-modal-toggle="defaultModal" class="block text-orange-500 bg-white hover:bg-orange-500 hover:text-white focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800" type="button">
+                            <button type="button" @click="show = true" data-modal-target="defaultModal" data-modal-toggle="defaultModal" class="block text-orange-500 bg-white hover:bg-orange-500 hover:text-white focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-gray-600" type="button">
                                 GIONINO'S PIZZA
                             </button>
 

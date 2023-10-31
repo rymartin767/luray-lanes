@@ -1,9 +1,9 @@
-<footer class="bg-white rounded-lg shadow dark:bg-gray-900">
+<footer class="bg-white dark:bg-gray-900">
     <div class="w-full max-w-screen-xl mx-auto p-4 lg:py-8">
         <div class="sm:flex sm:items-center sm:justify-between">
             <a href="/" class="flex items-center mb-4 sm:mb-0">
                 <img src="{{ asset('site-images/logo.jpg') }}" alt="" class="h-12 w-12 mr-3">
-                <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">Luray Lanes</span>
+                <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-gray-400">Luray Lanes</span>
             </a>
             <ul class="flex flex-col lg:flex-row space-y-4 lg:space-y-0 flex-wrap items-center mb-6 text-lg lg:text-sm font-alex font-medium text-gray-400 sm:mb-0 dark:text-gray-400">
                 <li>
