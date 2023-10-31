@@ -41,7 +41,7 @@ class EventResource extends Resource
                 RichEditor::make('description'),
                 FileUpload::make('images')
                     ->disk('s3')
-                    ->directory('images/specials-events')
+                    ->directory('images/events')
                     ->visibility('public')
                     ->label('Images')
                     ->image()
