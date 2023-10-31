@@ -45,7 +45,7 @@
                     <img src="{{ asset('site-images/glow.webp') }}" alt="">
                     <div class="flex flex-col flex-grow flex-wrap p-3 bg-white place-content-center">
                         <div role="button" class="w-full text-xl font-semibold text-center font-fig bg-gradient-to-r from-orange-300 to-orange-500 px-5 py-1 text-white hover:text-black rounded-lg">
-                            <a href="specials/#cosmic-glow-bowling">COSMIC GLOW BOWLING</a>
+                            <a href="specials/#cosmic-glow-bowling">COSMIC BOWLING</a>
                         </div>
                     </div>
                 </div>

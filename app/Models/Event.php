@@ -27,7 +27,7 @@ class Event extends Model
         });
 
         static::deleting(function (Event $event) {
-            Storage::disk('local')->delete($event->images);
+            Storage::disk('s3')->delete($event->images);
         });
     }
 

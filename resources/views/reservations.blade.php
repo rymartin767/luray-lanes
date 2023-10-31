@@ -2,8 +2,8 @@
     <section class="py-12">
         <div class="max-w-5xl mx-auto">
             <div class="flex flex-col">
-                <div class="text-4xl font-bold text-center font-alex tracking-wide">EASY ONLINE</div>
-                <div class="text-8xl font-bangers text-center text-orange-500">RESERVATIONS</div>
+                <div class="text-2xl lg:text-4xl font-bold text-center font-alex tracking-wide">EASY ONLINE</div>
+                <div class="text-6xl lg:text-8xl font-bangers text-center text-orange-500">RESERVATIONS</div>
                 <img src="{{ asset('site-images/reservations.jpg') }}" alt="" class="mt-6 rounded-md">
             </div>
 

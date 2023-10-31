@@ -2,8 +2,8 @@
     <div class="py-12 max-w-5xl mx-auto space-y-10">
 
         <div class="flex flex-col">
-            <div class="text-4xl font-bold text-center font-alex tracking-wide">BROWSE OUR</div>
-            <div class="text-8xl font-bangers text-center text-purple-400">SPECIALS & EVENTS</div>
+            <div class="text-2xl lg:text-4xl font-bold text-center font-alex tracking-wide">BROWSE OUR</div>
+            <div class="text-5xl lg:text-8xl font-bangers text-center text-purple-400">SPECIALS & EVENTS</div>
             <img src="{{ asset('site-images/jumbo-glow-bowling.webp') }}" alt="" class="mt-6 rounded-md">
         </div>
 

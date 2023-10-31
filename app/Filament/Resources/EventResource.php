@@ -40,8 +40,9 @@ class EventResource extends Resource
                 Forms\Components\DateTimePicker::make('end_date'),
                 RichEditor::make('description'),
                 FileUpload::make('images')
-                    ->disk('local')
-                    ->directory('public/images/events')
+                    ->disk('s3')
+                    ->directory('images/specials-events')
+                    ->visibility('public')
                     ->label('Images')
                     ->image()
                     ->imageEditor()
@@ -57,7 +58,7 @@ class EventResource extends Resource
         return $table
             ->columns([
                 ImageColumn::make('images')
-                    ->disk('local')
+                    ->disk('s3')
                     ->size(50)
                     ->circular(),
                 TextColumn::make('title')

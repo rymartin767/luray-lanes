@@ -1,20 +1,22 @@
 <x-app-layout>
-    <section class="py-12">
-        <div class="max-w-5xl mx-auto">
-            <div class="flex flex-col">
-                <div class="text-4xl font-bold text-center font-alex tracking-wide">BROWSE OUR</div>
-                <div class="text-8xl font-bangers text-center text-orange-500">FULL MENU & BAR</div>
-            </div>
+    <div class="py-12 max-w-5xl mx-auto space-y-10">
+
+        <div class="flex flex-col">
+            <div class="text-2xl lg:text-4xl font-bold text-center font-alex tracking-wide">BROWSE OUR</div>
+            <div class="text-6xl lg:text-8xl font-bangers text-center text-orange-500">FULL MENU & BAR</div>
+        </div>
+
+        <section class="px-6 lg:px-0">
             <div class="grid grid-cols-2 gap-3 mt-8">
-                <div class="col-span-1 flex flex-col h-full space-y-2">
+                <div class="col-span-2 lg:col-span-1 flex flex-col h-full space-y-2">
                     <!-- COUNTER FOOD -->
-                    <div class="p-3 h-1/3 rounded-md" style="background-image: url('images/bar.jpg');">
+                    <div class="p-3 h-40 lg:h-1/3 rounded-md" style="background-image: url('site-images/bar.jpg');">
 
                         <!-- BAR MODAL START -->
                         <div x-data="{ show: false }">
 
                             <!-- Modal toggle -->
-                            <button type="button" @click="show = true" data-modal-target="defaultModal" data-modal-toggle="defaultModal" class="block text-white bg-orange-400 hover:bg-orange-500 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800" type="button">
+                            <button type="button" @click="show = true" data-modal-target="defaultModal" data-modal-toggle="defaultModal" class="block text-orange-500 bg-white hover:bg-orange-500 hover:text-white focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800" type="button">
                                 SNACK COUNTER | FOOD
                             </button>
 
@@ -55,13 +57,13 @@
                     </div>
 
                     <!-- COUNTER BAR -->
-                    <div class="p-3 h-1/3 rounded-md" style="background-image: url('images/bar.jpg');">
+                    <div class="p-3 h-40 lg:h-1/3 rounded-md" style="background-image: url('site-images/bar.jpg');">
 
                         <!-- BAR MODAL START -->
                         <div x-data="{ show: false }">
 
                             <!-- Modal toggle -->
-                            <button type="button" @click="show = true" data-modal-target="defaultModal" data-modal-toggle="defaultModal" class="block text-white bg-orange-400 hover:bg-orange-500 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800" type="button">
+                            <button type="button" @click="show = true" data-modal-target="defaultModal" data-modal-toggle="defaultModal" class="block text-orange-500 bg-white hover:bg-orange-500 hover:text-white focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800" type="button">
                                 SNACK COUNTER | BAR
                             </button>
 
@@ -116,13 +118,13 @@
                     </div>
 
                     <!-- GIONINO PIZZA -->
-                    <div class="p-3 h-1/3 rounded-md" style="background-image: url('images/gionino.jpg');">
+                    <div class="p-3 h-40 lg:h-1/3 rounded-md" style="background-image: url('site-images/gionino.jpg');">
 
                         <!-- GIONINOS MODAL START -->
                         <div x-data="{ show: false }">
 
                             <!-- Modal toggle -->
-                            <button type="button" @click="show = true" data-modal-target="defaultModal" data-modal-toggle="defaultModal" class="block text-white bg-orange-400 hover:bg-orange-500 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800" type="button">
+                            <button type="button" @click="show = true" data-modal-target="defaultModal" data-modal-toggle="defaultModal" class="block text-orange-500 bg-white hover:bg-orange-500 hover:text-white focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800" type="button">
                                 GIONINO'S PIZZA
                             </button>
 
@@ -168,7 +170,7 @@
                     </div>
                     
                 </div>
-                <div class="col-span-1">
+                <div class="col-span-2 lg:col-span-1">
                     <img src="{{ asset('site-images/menu.jpg') }}" alt="" class="rounded-md">
                 </div>
                 <div class="col-span-2">
@@ -187,10 +189,11 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-span-1">
+                <div class="col-span-2 lg:col-span-1">
                     <img src="{{ asset('site-images/buckets.jpg') }}" alt="" class="rounded-md">
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
+            
+    </div>
 </x-app-layout>
