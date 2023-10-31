@@ -24,7 +24,7 @@
                     
                     <div class="col-span-4 md:col-span-1 mt-3">
                         <div class="flex flex-col space-y-3 text-center border-2 border-purple-500 rounded-md bg-white p-8">
-                            <div class="font-alex uppercase text-3xl">{{ $event->title }}</div>
+                            <img src="{{ $event->awsUrl() }}" alt="{{ $event->title }} Image" class="rounded">
                             <div class="uppercase text-pink-500">See our list of FAQs for additional information!</div>
                         </div>
                     </div>

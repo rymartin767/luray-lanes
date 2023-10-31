@@ -14,7 +14,7 @@
                 <div class="flex flex-col flex-wrap h-full">
                     <img src="{{ asset('site-images/league.webp') }}" alt="">
                     <div class="flex flex-col flex-grow flex-wrap p-3 bg-white place-content-center">
-                        <div role="button" class="w-full text-xl font-semibold text-center font-fig bg-gradient-to-r from-orange-300 to-orange-500 px-5 py-1 text-white hover:text-black rounded-lg">
+                        <div role="button" class="btn">
                             <a href="{{ route('reservations') }}">RESERVE A LANE</a>
                         </div>
                     </div>
@@ -24,7 +24,7 @@
                 <div class="flex flex-col flex-wrap h-full">
                     <img src="{{ asset('site-images/birthday.webp') }}" alt="">
                     <div class="flex flex-col flex-grow flex-wrap p-3 bg-white place-content-center">
-                        <div role="button" class="w-full text-xl font-semibold text-center font-fig bg-gradient-to-r from-orange-300 to-orange-500 px-5 py-1 text-white hover:text-black rounded-lg">
+                        <div role="button" class="btn">
                             <a href="{{ route('birthdays') }}">BIRTHDAY PARTIES</a>
                         </div>
                     </div>
@@ -34,7 +34,7 @@
                 <div class="flex flex-col flex-wrap h-full">
                     <img src="{{ asset('site-images/pizza.webp') }}" alt="">
                     <div class="flex flex-col flex-grow flex-wrap p-3 bg-white place-content-center">
-                        <div role="button" class="w-full text-xl font-semibold text-center font-fig bg-gradient-to-r from-orange-300 to-orange-500 px-5 py-1 text-white hover:text-black rounded-lg">
+                        <div role="button" class="btn">
                             <a href="{{ route('food') }}">OUR FOOD & BAR</a>
                         </div>
                     </div>
@@ -44,7 +44,7 @@
                 <div class="flex flex-col flex-wrap h-full">
                     <img src="{{ asset('site-images/glow.webp') }}" alt="">
                     <div class="flex flex-col flex-grow flex-wrap p-3 bg-white place-content-center">
-                        <div role="button" class="w-full text-xl font-semibold text-center font-fig bg-gradient-to-r from-orange-300 to-orange-500 px-5 py-1 text-white hover:text-black rounded-lg">
+                        <div role="button" class="btn">
                             <a href="specials/#cosmic-glow-bowling">COSMIC BOWLING</a>
                         </div>
                     </div>
@@ -223,6 +223,10 @@
 
             <div class="col-span-4 md:col-span-1 shadow-md rounded-md overflow-hidden">
                 <img src="{{ asset('site-images/cosmic-flyer.jpg') }}" alt="" loading="lazy">
+            </div>
+
+            <div class="col-span-4 md:col-span-1 shadow-md rounded-md overflow-hidden">
+                <img src="{{ asset('site-images/sipper.jpg') }}" alt="" loading="lazy">
             </div>
         </section>
 
