@@ -14,7 +14,7 @@
                 <div class="flex flex-col flex-wrap h-full">
                     <img src="{{ asset('site-images/league.webp') }}" alt="">
                     <div class="flex flex-col flex-grow flex-wrap p-3 bg-white place-content-center">
-                        <div role="button" class="btn">
+                        <div role="button" class="btn p-1">
                             <a href="{{ route('reservations') }}">RESERVE A LANE</a>
                         </div>
                     </div>
@@ -24,7 +24,7 @@
                 <div class="flex flex-col flex-wrap h-full">
                     <img src="{{ asset('site-images/birthday.webp') }}" alt="">
                     <div class="flex flex-col flex-grow flex-wrap p-3 bg-white place-content-center">
-                        <div role="button" class="btn">
+                        <div role="button" class="btn p-1">
                             <a href="{{ route('birthdays') }}">BIRTHDAY PARTIES</a>
                         </div>
                     </div>
@@ -34,7 +34,7 @@
                 <div class="flex flex-col flex-wrap h-full">
                     <img src="{{ asset('site-images/pizza.webp') }}" alt="">
                     <div class="flex flex-col flex-grow flex-wrap p-3 bg-white place-content-center">
-                        <div role="button" class="btn">
+                        <div role="button" class="btn p-1">
                             <a href="{{ route('food') }}">OUR FOOD & BAR</a>
                         </div>
                     </div>
@@ -44,7 +44,7 @@
                 <div class="flex flex-col flex-wrap h-full">
                     <img src="{{ asset('site-images/glow.webp') }}" alt="">
                     <div class="flex flex-col flex-grow flex-wrap p-3 bg-white place-content-center">
-                        <div role="button" class="btn">
+                        <div role="button" class="btn p-1">
                             <a href="specials/#cosmic-glow-bowling">COSMIC BOWLING</a>
                         </div>
                     </div>
@@ -174,7 +174,7 @@
                         <img src="{{ $event->awsUrl() }}" alt="" loading="lazy">
                         <div class="flex flex-col p-4 bg-white space-y-3">
                             <div class="text-2xl font-fig text-center font-bold uppercase">{{ $event->title }}</div>
-                            <a role="button" href="/specials#{{ $event->slug }}" class="btn text-center">CLICK HERE FOR DETAILS</a>
+                            <a role="button" href="/specials#{{ $event->slug }}" class="btn p-3">CLICK HERE FOR DETAILS</a>
                         </div>
                     </div>
                 </div>

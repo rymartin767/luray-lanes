@@ -23,5 +23,5 @@
 }
 
 .btn {
-    @apply bg-orange-500 text-white p-3 rounded-md w-full text-center;
+    @apply bg-orange-500 text-white rounded-md w-full text-center;
 }
