@@ -85,7 +85,7 @@
                     @foreach ($faqs as $k => $v)
                     <div>
                         <!-- The button that toggles the accordion item -->
-                        <button @click="selected !== {{ $k }} ? selected = {{ $k }} : selected = null" class="w-full flex justify-between items-center p-3 ">
+                        <button @click="selected !== {{ $k }} ? selected = {{ $k }} : selected = null" class="faq-button">
                             <!-- The title of the accordion item -->
                             <div class="text-sm lg:text-base">{{ $v['question'] }}</div>
                             <!-- The icon that indicates whether the accordion item is expanded or collapsed -->
@@ -93,7 +93,7 @@
                                 <span class="text-lg transition-all block" :class="selected === {{ $k }} ? 'rotate-45' : ''">+</span>
                             </div>
                         </button>
-                        <div x-cloak x-show="selected === {{ $k }}" class="text-lg text-black/50 p-3" x-transition:enter="transition ease-out duration-100" x-transition:enter-start="transform opacity-0 scale-95">
+                        <div x-cloak x-show="selected === {{ $k }}" class="faq-answer" x-transition:enter="transition ease-out duration-100" x-transition:enter-start="transform opacity-0 scale-95">
                             {{ $v['answer']}}
                         </div>
                     </div>

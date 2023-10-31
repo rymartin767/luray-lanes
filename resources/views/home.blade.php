@@ -8,12 +8,12 @@
         <!-- ATTRACTIONS -->
         <section class="grid grid-cols-5 px-6 lg:px-0 gap-3">
             <div class="col-span-5">
-                <div class="text-4xl font-alex border-l-4 border-orange-500 pl-3">ATTRACTIONS</div>
+                <div class="section-title">ATTRACTIONS</div>
             </div>
-            <div class="col-span-5 lg:col-span-1 shadow-md rounded-md overflow-hidden bg-pink-200">
+            <div class="col-span-5 lg:col-span-1 shadow-md dark:shadow-none rounded-md overflow-hidden bg-pink-200">
                 <div class="flex flex-col flex-wrap h-full">
                     <img src="{{ asset('site-images/league.webp') }}" alt="">
-                    <div class="flex flex-col flex-grow flex-wrap p-3 bg-white place-content-center">
+                    <div class="flex flex-col flex-grow flex-wrap p-3 bg-white dark:bg-gray-800 place-content-center">
                         <div role="button" class="btn p-1">
                             <a href="{{ route('reservations') }}">RESERVE A LANE</a>
                         </div>
@@ -23,7 +23,7 @@
             <div class="col-span-5 lg:col-span-1 shadow-md rounded-md overflow-hidden">
                 <div class="flex flex-col flex-wrap h-full">
                     <img src="{{ asset('site-images/birthday.webp') }}" alt="">
-                    <div class="flex flex-col flex-grow flex-wrap p-3 bg-white place-content-center">
+                    <div class="flex flex-col flex-grow flex-wrap p-3 bg-white dark:bg-gray-800 place-content-center">
                         <div role="button" class="btn p-1">
                             <a href="{{ route('birthdays') }}">BIRTHDAY PARTIES</a>
                         </div>
@@ -33,7 +33,7 @@
             <div class="col-span-5 lg:col-span-1 shadow-md rounded-md overflow-hidden">
                 <div class="flex flex-col flex-wrap h-full">
                     <img src="{{ asset('site-images/pizza.webp') }}" alt="">
-                    <div class="flex flex-col flex-grow flex-wrap p-3 bg-white place-content-center">
+                    <div class="flex flex-col flex-grow flex-wrap p-3 bg-white dark:bg-gray-800 place-content-center">
                         <div role="button" class="btn p-1">
                             <a href="{{ route('food') }}">OUR FOOD & BAR</a>
                         </div>
@@ -43,7 +43,7 @@
             <div class="col-span-5 lg:col-span-1 shadow-md rounded-md overflow-hidden">
                 <div class="flex flex-col flex-wrap h-full">
                     <img src="{{ asset('site-images/glow.webp') }}" alt="">
-                    <div class="flex flex-col flex-grow flex-wrap p-3 bg-white place-content-center">
+                    <div class="flex flex-col flex-grow flex-wrap p-3 bg-white dark:bg-gray-800 place-content-center">
                         <div role="button" class="btn p-1">
                             <a href="specials/#cosmic-glow-bowling">COSMIC BOWLING</a>
                         </div>
@@ -55,36 +55,36 @@
         <!-- OPEN BOWLING -->
         <section class="grid grid-cols-3 px-6 lg:px-0 gap-3">
             <div class="col-span-3">
-                <div class="text-4xl font-alex border-l-4 border-orange-500 pl-3">OPEN BOWLING</div>
+                <div class="section-title">OPEN BOWLING</div>
             </div>
-            <div class="col-span-3 lg:col-span-1 flex flex-wrap place-content-center bg-white p-4 rounded-xl shadow-lg">
+            <div class="col-span-3 lg:col-span-1 flex flex-wrap place-content-center bg-white dark:bg-gray-800 p-4 rounded-xl shadow-lg">
                 <div class="flex flex-col space-y-8 w-full">
                     <div class="flex flex-row items-center">
-                        <div class="lg:text-2xl flex-grow">MONDAY</div>
+                        <div class="lg:text-2xl flex-grow dark:text-gray-50">MONDAY</div>
                         <div class="text-sm lg:text-base text-gray-400">9AM to 9PM</div>
                     </div>
                     <div class="flex flex-row items-center">
-                        <div class="lg:text-2xl flex-grow">TUESDAY</div>
+                        <div class="lg:text-2xl flex-grow dark:text-gray-50">TUESDAY</div>
                         <div class="text-sm lg:text-base text-gray-400">5PM to 10PM</div>
                     </div>
                     <div class="flex flex-row items-center">
-                        <div class="lg:text-2xl flex-grow">WEDNESDAY</div>
+                        <div class="lg:text-2xl flex-grow dark:text-gray-50">WEDNESDAY</div>
                         <div class="text-sm lg:text-base text-gray-400">3PM to 9PM</div>
                     </div>
                     <div class="flex flex-row items-center">
-                        <div class="lg:text-2xl flex-grow">THURSDAY</div>
+                        <div class="lg:text-2xl flex-grow dark:text-gray-50">THURSDAY</div>
                         <div class="text-sm lg:text-base text-gray-400">9AM to 9PM</div>
                     </div>
                     <div class="flex flex-row items-center">
-                        <div class="lg:text-2xl flex-grow">FRIDAY</div>
+                        <div class="lg:text-2xl flex-grow dark:text-gray-50">FRIDAY</div>
                         <div class="text-sm lg:text-base text-gray-400">8AM to 12PM & 5PM to 11PM</div>
                     </div>
                     <div class="flex flex-row items-center">
-                        <div class="lg:text-2xl flex-grow">SATURDAY</div>
+                        <div class="lg:text-2xl flex-grow dark:text-gray-50">SATURDAY</div>
                         <div class="text-sm lg:text-base text-gray-400">10AM to 11PM</div>
                     </div>
                     <div class="flex flex-row items-center">
-                        <div class="lg:text-2xl flex-grow">SUNDAY</div>
+                        <div class="lg:text-2xl flex-grow dark:text-gray-50">SUNDAY</div>
                         <div class="text-sm lg:text-base text-gray-400">12PM to 9PM</div>
                     </div>
                 </div>
@@ -165,15 +165,15 @@
         <!-- EVENTS -->
         <section class="grid grid-cols-3 px-6 lg:px-0 gap-3">
             <div class="col-span-3">
-                <div class="text-4xl font-alex border-l-4 border-orange-500 pl-3">SPECIAL EVENTS</div>
+                <div class="section-title">SPECIAL EVENTS</div>
             </div>
 
             @forelse ($events as $event)
                 <div class="col-span-3 md:col-span-1 shadow-md rounded-md overflow-hidden">
                     <div class="flex flex-col">
                         <img src="{{ $event->awsUrl() }}" alt="" loading="lazy">
-                        <div class="flex flex-col p-4 bg-white space-y-3">
-                            <div class="text-2xl font-fig text-center font-bold uppercase">{{ $event->title }}</div>
+                        <div class="flex flex-col p-4 bg-white dark:bg-gray-800 space-y-3">
+                            <div class="text-2xl font-fig text-center dark:text-gray-400 font-bold uppercase">{{ $event->title }}</div>
                             <a role="button" href="/specials#{{ $event->slug }}" class="btn p-3">CLICK HERE FOR DETAILS</a>
                         </div>
                     </div>
@@ -186,12 +186,12 @@
         <!-- FLYERS -->
         <section class="grid grid-cols-4 px-6 lg:px-0 gap-3">
             <div class="col-span-4">
-                <div class="text-4xl font-alex border-l-4 border-orange-500 pl-3">FEATURED FLYERS</div>
+                <div class="section-title">FEATURED FLYERS</div>
             </div>
 
-            <div class="hidden lg:block col-span-4 my-3 bg-white rounded-lg py-3 border border-gray-50 shadow-sm">
+            <div class="hidden lg:block col-span-4 my-3 bg-white dark:bg-gray-800 rounded-lg py-3 border border-gray-50 shadow-sm">
                 <div class="text-6xl text-center font-alex">
-                    <span class="text-black">EAT.</span>
+                    <span class="text-black dark:text-gray-900">EAT.</span>
                     <span class="text-gray-400">DRINK.</span>
                     <span class="text-orange-500">BOWL.</span>
                 </div>

@@ -11,7 +11,7 @@
             <section class="px-6 lg:px-0">
                 <div id="{{ $event->slug }}" class="grid grid-cols-4 gap-3">
                     <div class="col-span-4">
-                        <div class="text-4xl font-bold text-center font-alex tracking-wide">{{ $event->title }}</div>
+                        <div class="text-4xl font-bold text-center font-alex tracking-wide dark:text-gray-50">{{ $event->title }}</div>
                     </div>
 
                     @if ($event->description != null)
@@ -23,7 +23,7 @@
                     @endif
                     
                     <div class="col-span-4 md:col-span-1 mt-3">
-                        <div class="flex flex-col space-y-3 text-center border-2 border-purple-500 rounded-md bg-white p-8">
+                        <div class="flex flex-col space-y-3 text-center border-2 border-purple-500 rounded-md bg-white dark:bg-gray-700 p-8">
                             <img src="{{ $event->awsUrl() }}" alt="{{ $event->title }} Image" class="rounded">
                             <div class="uppercase text-pink-500">See our list of FAQs for additional information!</div>
                         </div>
