@@ -72,7 +72,7 @@
                 ],
                 6 => [
                     'question' => 'How are Gionino\'s pizza orders handled?',
-                    'answer' => 'We will place the food order on your behalf. Just advise us of your order upon arrival. No coupons are accepted.'
+                    'answer' => 'We will place the food order on your behalf. We kindly ask for your order at least 24 hours in advance. No coupons are accepted.'
                 ],
             ];
         @endphp

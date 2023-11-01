@@ -154,7 +154,7 @@
                         <div class="col-span-2 bg-white shadow-md rounded-lg p-3 text-center">
                             <div class="text-xl text-orange-500 font-bold font-alex">ALL YOU CAN BOWL</div>
                             <div class="text-xl text-orange-500 font-bold font-alex mb-3">2 HOURS</div>
-                            <div>$5/PER PERSON</div>
+                            <div>$14/PER PERSON</div>
                             <div class="text-xs italic text-gray-500">Monday 5-9P / Wednesday 3-9P / Thursday 4-9P</div>
                         </div>
                     </div>
