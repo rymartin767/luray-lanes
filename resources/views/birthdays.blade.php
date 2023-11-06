@@ -10,21 +10,21 @@
         <section class="px-6 lg:px-0">
             <div class="grid grid-cols-4 gap-3">
                 <div class="col-span-4">
-                    <div class="text-3xl lg:text-4xl font-bold text-center font-alex tracking-wide">BIRTHDAY DETAILS</div>
+                    <div class="text-3xl lg:text-4xl font-bold text-center font-alex tracking-wide dark:text-gray-50">BIRTHDAY DETAILS</div>
                 </div>
-                <div class="col-span-4 md:col-span-1 mt-6 bg-white rounded-xl shadow-lg">
+                <div class="col-span-4 md:col-span-1 mt-6 bg-white dark:bg-gray-700 rounded-xl shadow-lg">
                     <div class="flex flex-col text-center p-6">
-                        <div class="font-alex uppercase text-xl">Birthday Bowling Pins</div>
+                        <div class="font-alex uppercase text-xl dark:text-gray-50">Birthday Bowling Pins</div>
                         <div class="uppercase text-orange-500">GIFT ITEMS</div>
                         
-                        <div class="text-xl">$18</div>
+                        <div class="text-xl dark:text-gray-50">$18</div>
                     </div>
                 </div>
-                <div class="flex flex-wrap content-center col-span-4 md:col-span-2 mt-6 bg-white rounded-xl shadow-lg p-2">
+                <div class="flex flex-wrap content-center col-span-4 md:col-span-2 mt-6 bg-white dark:bg-gray-700 rounded-xl shadow-lg p-2">
                     <div class="flex flex-col text-center p-6 w-full">
-                        <div class="font-alex uppercase text-4xl">The "Strike" Package</div>
+                        <div class="font-alex uppercase text-4xl dark:text-gray-50">The "Strike" Package</div>
                         <div class="uppercase text-orange-500">Create the perfect day</div>
-                        <ul class="py-4 list-inside list-disc">
+                        <ul class="py-4 list-inside list-disc dark:text-gray-50">
                             <li>One Lane for 1 Hour of bowling</li>
                             <li>Maximum 6 Bowlers per lane</li>
                             <li>Rental Shoes</li>
@@ -34,9 +34,9 @@
                         <div class="text-8xl text-orange-500 font-bold">$60!</div>
                     </div>
                 </div>
-                <div class="col-span-4 md:col-span-1 mt-6 bg-white rounded-xl shadow-lg">
+                <div class="col-span-4 md:col-span-1 mt-6 bg-white dark:bg-gray-700 rounded-xl shadow-lg">
                     <div class="flex flex-col text-center p-6">
-                        <div class="font-alex uppercase text-xl mb-2">Pin Sipper Cup</div>
+                        <div class="font-alex uppercase text-xl dark:text-gray-50 mb-2">Pin Sipper Cup</div>
                         <img src="{{ asset('site-images/sipper.webp') }}" alt="" class="rounded-md shadow-sm">
                         <div class="uppercase text-orange-500">GIFT ITEMS</div>
                         <div class="text-sm italic text-gray-400">$8.50 Each (Empty)</div>

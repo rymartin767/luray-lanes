@@ -31,20 +31,20 @@
                     <div class="col-span-4 md:col-span-3 mt-3">
                         <div x-data="{ selected: null }" class="border border-gray-200 rounded-lg" class="p-3">
                             <!-- The accordion items -->
-                            <div class="[&>*]:border-b [&>*]:border-b-gray-200 last:[&>*]:border-b-0 bg-white rounded-md">
+                            <div class="[&>*]:border-b [&>*]:border-b-gray-200 last:[&>*]:border-b-0 bg-white dark:bg-gray-700 rounded-md">
                                 <!-- Accordion item 1 -->
                                 @foreach ($event->faqs as $faq)
-                                    <div>
+                                    <div class="rounded-md overflow-hidden">
                                         <!-- The button that toggles the accordion item -->
                                         <button @click="selected !== {{ $faq->id }} ? selected = {{ $faq->id }} : selected = null" class="w-full flex justify-between items-center p-3 ">
                                             <!-- The title of the accordion item -->
-                                            <h3 class="text-sm font-semibold">{{ $faq->question }}</h3>
+                                            <div class="text-sm text-left pr-4 font-semibold dark:bg-gray-700 dark:text-gray-50">{{ $faq->question }}</div>
                                             <!-- The icon that indicates whether the accordion item is expanded or collapsed -->
                                             <div>
-                                                <span class="text-lg transition-all block" :class="selected === {{ $faq->id }} ? 'rotate-45' : ''">+</span>
+                                                <span class="text-lg transition-all block dark:text-gray-50" :class="selected === {{ $faq->id }} ? 'rotate-45' : ''">+</span>
                                             </div>
                                         </button>
-                                        <div x-cloak x-show="selected === {{ $faq->id }}" class="text-sm text-black/50 p-3" x-transition:enter="transition ease-out duration-100" x-transition:enter-start="transform opacity-0 scale-95">
+                                        <div x-cloak x-show="selected === {{ $faq->id }}" class="text-sm text-black/50 dark:bg-gray-700 dark:text-gray-50 p-3" x-transition:enter="transition ease-out duration-100" x-transition:enter-start="transform opacity-0 scale-95">
                                             {{ $faq->answer }}
                                         </div>
                                     </div>
