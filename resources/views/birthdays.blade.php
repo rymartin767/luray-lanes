@@ -37,7 +37,7 @@
                 <div class="col-span-4 md:col-span-1 mt-6 bg-white dark:bg-gray-700 rounded-xl shadow-lg">
                     <div class="flex flex-col text-center p-6">
                         <div class="font-alex uppercase text-xl dark:text-gray-50 mb-2">Pin Sipper Cup</div>
-                        <img src="{{ asset('site-images/sipper.webp') }}" alt="" class="rounded-md shadow-sm">
+                        <img src="{{ asset('site-images/sipper.webp') }}" alt="" class="mb-2 rounded-md shadow-sm" loading="lazy">
                         <div class="uppercase text-orange-500">GIFT ITEMS</div>
                         <div class="text-sm italic text-gray-400">$8.50 Each (Empty)</div>
                         <div class="text-sm italic text-gray-400">$9.50 Each (w/Soda)</div>
