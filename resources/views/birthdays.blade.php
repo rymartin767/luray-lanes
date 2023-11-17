@@ -10,7 +10,7 @@
         <section class="px-6 lg:px-0">
             <div class="grid grid-cols-4 gap-3">
                 <div class="col-span-4">
-                    <div class="text-3xl lg:text-4xl font-bold text-center font-alex tracking-wide dark:text-gray-50">BIRTHDAY DETAILS</div>
+                    <div class="text-3xl lg:text-4xl font-bold text-center font-alex dark:text-gray-50">BIRTHDAY DETAILS</div>
                 </div>
                 <div class="col-span-4 md:col-span-1 mt-6 bg-white dark:bg-gray-700 rounded-xl shadow-lg">
                     <div class="flex flex-col text-center p-6">
