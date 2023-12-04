@@ -32,13 +32,9 @@ class EventResource extends Resource
             ->schema([
                 Forms\Components\TextInput::make('title')
                     ->required(),
-                Forms\Components\Toggle::make('is_visible')
-                    ->required(),
-                Forms\Components\Toggle::make('is_on_homepage')
-                    ->required(),
                 Forms\Components\DateTimePicker::make('start_date'),
                 Forms\Components\DateTimePicker::make('end_date'),
-                RichEditor::make('description'),
+                RichEditor::make('description')->columnSpan(2),
                 FileUpload::make('images')
                     ->disk('s3')
                     ->directory('images/events')
@@ -49,8 +45,13 @@ class EventResource extends Resource
                     ->imageEditorAspectRatios([
                         '16:9',
                     ])
-                    ->multiple()
-            ]);
+                    ->multiple(),
+                Forms\Components\Toggle::make('is_visible')
+                    ->required(),
+                Forms\Components\Toggle::make('is_on_homepage')
+                    ->required(),
+                
+            ])->columns(3);
     }
 
     public static function table(Table $table): Table

@@ -14,7 +14,7 @@
 
             @php
                 $faqs = collect([
-                    ['id' => 1, 'question' => 'When can I make an online reservation?', 'answer' => 'We expect online reservations to be available in November 2023'],
+                    ['id' => 1, 'question' => 'When can I make an online reservation?', 'answer' => 'We expect online reservations to be available in January 2024'],
                 ]);
             @endphp
 
