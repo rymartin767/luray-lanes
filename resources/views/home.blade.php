@@ -77,7 +77,7 @@
                     </div>
                     <div class="flex flex-row items-center">
                         <div class="lg:text-2xl flex-grow dark:text-gray-50">FRIDAY</div>
-                        <div class="text-sm lg:text-base text-gray-400">56PM to 9PM</div>
+                        <div class="text-sm lg:text-base text-gray-400">6PM to 9PM</div>
                     </div>
                     <div class="flex flex-row items-center">
                         <div class="lg:text-2xl flex-grow dark:text-gray-50">SATURDAY</div>
