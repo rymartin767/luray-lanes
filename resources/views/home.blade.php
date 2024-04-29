@@ -61,31 +61,31 @@
                 <div class="flex flex-col space-y-8 w-full">
                     <div class="flex flex-row items-center">
                         <div class="lg:text-2xl flex-grow dark:text-gray-50">MONDAY</div>
-                        <div class="text-sm lg:text-base text-gray-400">9AM to 9PM</div>
+                        <div class="text-sm lg:text-base text-gray-400">CLOSED</div>
                     </div>
                     <div class="flex flex-row items-center">
                         <div class="lg:text-2xl flex-grow dark:text-gray-50">TUESDAY</div>
-                        <div class="text-sm lg:text-base text-gray-400">5PM to 10PM</div>
+                        <div class="text-sm lg:text-base text-gray-400">6PM to 9PM</div>
                     </div>
                     <div class="flex flex-row items-center">
                         <div class="lg:text-2xl flex-grow dark:text-gray-50">WEDNESDAY</div>
-                        <div class="text-sm lg:text-base text-gray-400">3PM to 9PM</div>
+                        <div class="text-sm lg:text-base text-gray-400">CLOSED</div>
                     </div>
                     <div class="flex flex-row items-center">
                         <div class="lg:text-2xl flex-grow dark:text-gray-50">THURSDAY</div>
-                        <div class="text-sm lg:text-base text-gray-400">9AM to 9PM</div>
+                        <div class="text-sm lg:text-base text-gray-400">9AM to 1PM & 5PM to 9PM</div>
                     </div>
                     <div class="flex flex-row items-center">
                         <div class="lg:text-2xl flex-grow dark:text-gray-50">FRIDAY</div>
-                        <div class="text-sm lg:text-base text-gray-400">8AM to 12PM & 5PM to 11PM</div>
+                        <div class="text-sm lg:text-base text-gray-400">56PM to 9PM</div>
                     </div>
                     <div class="flex flex-row items-center">
                         <div class="lg:text-2xl flex-grow dark:text-gray-50">SATURDAY</div>
-                        <div class="text-sm lg:text-base text-gray-400">10AM to 11PM</div>
+                        <div class="text-sm lg:text-base text-gray-400">4PM to 9PM</div>
                     </div>
                     <div class="flex flex-row items-center">
                         <div class="lg:text-2xl flex-grow dark:text-gray-50">SUNDAY</div>
-                        <div class="text-sm lg:text-base text-gray-400">12PM to 9PM</div>
+                        <div class="text-sm lg:text-base text-gray-400">6PM to 9PM</div>
                     </div>
                 </div>
             </div>
