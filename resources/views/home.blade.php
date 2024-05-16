@@ -10,7 +10,7 @@
             <div class="col-span-5">
                 <div class="section-title">ATTRACTIONS</div>
             </div>
-            <div class="col-span-5 lg:col-span-1 shadow-md dark:shadow-none rounded-md overflow-hidden bg-pink-200">
+            <div class="col-span-5 lg:col-span-1 shadow-md dark:shadow-none rounded-md overflow-hidden">
                 <div class="flex flex-col flex-wrap h-full">
                     <img src="{{ asset('site-images/league.webp') }}" alt="">
                     <div class="flex flex-col flex-grow flex-wrap p-3 bg-white dark:bg-gray-800 place-content-center">
@@ -58,7 +58,7 @@
                 <div class="section-title">OPEN BOWLING</div>
             </div>
             <div class="col-span-3 lg:col-span-1 flex flex-wrap place-content-center bg-white dark:bg-gray-800 p-4 rounded-xl shadow-lg">
-                <div class="flex flex-col space-y-8 w-full">
+                <div class="flex flex-col space-y-8 w-full dark:bg-gray-800">
                     <div class="flex flex-row items-center">
                         <div class="lg:text-2xl flex-grow dark:text-gray-50">MONDAY</div>
                         <div class="text-sm lg:text-base text-gray-400">CLOSED</div>
@@ -101,43 +101,43 @@
                             </tr>
                         </thead>
                         <tbody class="text-center text-sm">
-                            <tr class="bg-white border-b border-gray-200">
+                            <tr class="dark:bg-gray-800 dark:text-white/90 bg-white border-b border-gray-200">
                                 <td class="p-3">MON-FRI OPEN BOWL</td>
                                 <td>$5</td>
                                 <td>$30/LANE</td>
                             </tr>
-                            <tr class="bg-gray-50">
+                            <tr class="dark:bg-gray-800 dark:text-white/90 bg-gray-50">
                                 <td class="pt-3 px-3">ALL YOU CAN BOWL FOR 2 HOURS</td>
                                 <td></td>
                                 <td>$14/PERSON</td>
                             </tr>
-                            <tr class="bg-gray-50 border-b border-gray-200">
+                            <tr class="dark:bg-gray-800 dark:text-white/90 bg-gray-50 border-b border-gray-200">
                                 <td colspan="4" class="italic text-gray-400 py-3">Monday 5-9P / Wednesday 3-9P / Thursday 4-9P</td>
                             </tr>
-                            <tr class="bg-white border-b border-gray-200">
+                            <tr class="dark:bg-gray-800 dark:text-white/90 bg-white border-b border-gray-200">
                                 <td class="py-3">THURSDAY SENIOR SPECIAL</td>
                                 <td>$9</td>
                                 <td></td>
                             </tr>
-                            <tr class="bg-gray-50 border-b border-gray-200">
+                            <tr class="dark:bg-gray-800 dark:text-white/90 bg-gray-50 border-b border-gray-200">
                                 <td class="py-3">FRIDAY & SATURDAY COSMIC BOWL</td>
                                 <td>$5</td>
                                 <td>$30/Lane</td>
                             </tr>
-                            <tr class="bg-white">
+                            <tr class="dark:bg-gray-800 dark:text-white/90 bg-white">
                                 <td class="pt-3">SUNDAY FAMILY FUN DAY</td>
                                 <td></td>
                                 <td>$65/Lane</td>
                             </tr>
-                            <tr class="bg-white border-b border-gray-200">
+                            <tr class="dark:bg-gray-800 dark:text-white/90 bg-white border-b border-gray-200">
                                 <td colspan="4" class="py-3 italic text-gray-400">Includes 1 Lane for 2 hours + Shoes + Pizza</td>
                             </tr>
-                            <tr class="bg-gray-50">
+                            <tr class="bg-gray-50 dark:bg-gray-800 dark:text-white/90">
                                 <td class="pt-3">BIRTHDAY PACKAGE</td>
                                 <td></td>
                                 <td>$60/Lane</td>
                             </tr>
-                            <tr class="bg-gray-50">
+                            <tr class="bg-gray-50 dark:bg-gray-800 dark:text-white/90">
                                 <td colspan="4" class="py-3 italic text-gray-400">Includes 1 Lane for an hour + Shoes + Pitcher of pop</td>
                             </tr>
                         </tbody>
@@ -214,15 +214,15 @@
             </div>
 
             <div class="col-span-4 md:col-span-1 shadow-md rounded-md overflow-hidden">
-                <img src="{{ asset('site-images/all-you-can-bowl-flyer.jpg') }}" alt="" loading="lazy">
+                <img src="{{ asset('site-images/all-you-can-bowl-summer-2024.jpg') }}" alt="" loading="lazy">
             </div>
 
             <div class="col-span-4 md:col-span-1 shadow-md rounded-md overflow-hidden">
-                <img src="{{ asset('site-images/family-fun-day-flyer.jpg') }}" alt="" loading="lazy">
+                <img src="{{ asset('site-images/family-bowl.jpg') }}" alt="" loading="lazy">
             </div>
 
             <div class="col-span-4 md:col-span-1 shadow-md rounded-md overflow-hidden">
-                <img src="{{ asset('site-images/cosmic-flyer.jpg') }}" alt="" loading="lazy">
+                <img src="{{ asset('site-images/cosmic-flyer-2024.jpg') }}" alt="" loading="lazy">
             </div>
 
             <div class="col-span-4 md:col-span-1 shadow-md rounded-md overflow-hidden">
