@@ -3,13 +3,14 @@
 namespace App\Filament\Resources\EventResource\RelationManagers;
 
 use Filament\Forms;
-use Filament\Forms\Components\TextInput;
-use Filament\Forms\Form;
-use Filament\Resources\RelationManagers\RelationManager;
 use Filament\Tables;
+use Filament\Forms\Form;
 use Filament\Tables\Table;
+use Filament\Forms\Components\TextInput;
+use Filament\Forms\Components\RichEditor;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\SoftDeletingScope;
+use Filament\Resources\RelationManagers\RelationManager;
 
 class FaqsRelationManager extends RelationManager
 {
@@ -19,10 +20,10 @@ class FaqsRelationManager extends RelationManager
     {
         return $form
             ->schema([
-                TextInput::make('question')
+                RichEditor::make('question')
                     ->required()
                     ->maxLength(255),
-                TextInput::make('answer')
+                RichEditor::make('answer')
                     ->required()
                     ->maxLength(255)
             ]);
