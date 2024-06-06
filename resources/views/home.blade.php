@@ -57,108 +57,78 @@
             <div class="col-span-3">
                 <div class="section-title">OPEN BOWLING</div>
             </div>
-            <div class="col-span-3 lg:col-span-1 flex flex-wrap place-content-center bg-white dark:bg-gray-800 p-4 rounded-xl shadow-lg">
-                <div class="flex flex-col space-y-8 w-full dark:bg-gray-800">
-                    <div class="flex flex-row items-center">
-                        <div class="lg:text-2xl flex-grow dark:text-gray-50">MONDAY</div>
-                        <div class="text-sm lg:text-base text-gray-400">CLOSED</div>
-                    </div>
-                    <div class="flex flex-row items-center">
-                        <div class="lg:text-2xl flex-grow dark:text-gray-50">TUESDAY</div>
-                        <div class="text-sm lg:text-base text-gray-400">6PM to 9PM</div>
-                    </div>
-                    <div class="flex flex-row items-center">
-                        <div class="lg:text-2xl flex-grow dark:text-gray-50">WEDNESDAY</div>
-                        <div class="text-sm lg:text-base text-gray-400">CLOSED</div>
-                    </div>
-                    <div class="flex flex-row items-center">
-                        <div class="lg:text-2xl flex-grow dark:text-gray-50">THURSDAY</div>
-                        <div class="text-sm lg:text-base text-gray-400">9AM to 1PM & 5PM to 9PM</div>
-                    </div>
-                    <div class="flex flex-row items-center">
-                        <div class="lg:text-2xl flex-grow dark:text-gray-50">FRIDAY</div>
-                        <div class="text-sm lg:text-base text-gray-400">6PM to 9PM</div>
-                    </div>
-                    <div class="flex flex-row items-center">
-                        <div class="lg:text-2xl flex-grow dark:text-gray-50">SATURDAY</div>
-                        <div class="text-sm lg:text-base text-gray-400">4PM to 9PM</div>
-                    </div>
-                    <div class="flex flex-row items-center">
-                        <div class="lg:text-2xl flex-grow dark:text-gray-50">SUNDAY</div>
-                        <div class="text-sm lg:text-base text-gray-400">6PM to 9PM</div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-span-3 lg:col-span-2">
-                <!-- DESKTOP TABLE -->
-                <div class="hidden lg:block">
-                    <table class="w-full rounded-xl overflow-hidden shadow-lg">
-                        <thead class="bg-gradient-to-r from-orange-300 to-orange-500 text-white">
-                            <tr class="">
-                                <th class="py-6 lg:py-4 text-sm lg:text-xl">BOWLING</th>
-                                <th class="text-sm lg:text-xl">GAME PRICE</th>
-                                <th class="text-sm lg:text-xl">HOURLY PRICE</th>
-                            </tr>
-                        </thead>
-                        <tbody class="text-center text-sm">
-                            <tr class="dark:bg-gray-800 dark:text-white/90 bg-white border-b border-gray-200">
-                                <td class="p-3">MON-FRI OPEN BOWL</td>
-                                <td>$5</td>
-                                <td>$30/LANE</td>
-                            </tr>
-                            <tr class="dark:bg-gray-800 dark:text-white/90 bg-gray-50">
-                                <td class="pt-3 px-3">ALL YOU CAN BOWL FOR 2 HOURS</td>
-                                <td></td>
-                                <td>$14/PERSON</td>
-                            </tr>
-                            <tr class="dark:bg-gray-800 dark:text-white/90 bg-gray-50 border-b border-gray-200">
-                                <td colspan="4" class="italic text-gray-400 py-3">Thursday 5-9P / Sunday 6-9P</td>
-                            </tr>
-                            <tr class="dark:bg-gray-800 dark:text-white/90 bg-white border-b border-gray-200">
-                                <td class="py-3">THURSDAY SENIOR SPECIAL</td>
-                                <td>$9</td>
-                                <td></td>
-                            </tr>
-                            <tr class="dark:bg-gray-800 dark:text-white/90 bg-gray-50 border-b border-gray-200">
-                                <td class="py-3">FRIDAY & SATURDAY COSMIC BOWL</td>
-                                <td>$5</td>
-                                <td>$30/Lane</td>
-                            </tr>
-                            <tr class="dark:bg-gray-800 dark:text-white/90 bg-white">
-                                <td class="pt-3">SATURDAY FAMILY FUN DAY</td>
-                                <td></td>
-                                <td>$65/Lane</td>
-                            </tr>
-                            <tr class="dark:bg-gray-800 dark:text-white/90 bg-white border-b border-gray-200">
-                                <td colspan="4" class="py-3 italic text-gray-400">Includes 1 Lane for 2 hours + Shoes + Pizza / 4-6P</td>
-                            </tr>
-                            <tr class="bg-gray-50 dark:bg-gray-800 dark:text-white/90">
-                                <td class="pt-3">BIRTHDAY PACKAGE</td>
-                                <td></td>
-                                <td>$60/Lane</td>
-                            </tr>
-                            <tr class="bg-gray-50 dark:bg-gray-800 dark:text-white/90">
-                                <td colspan="4" class="py-3 italic text-gray-400">Includes 1 Lane for an hour + Shoes + Pitcher of pop</td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
-                <!-- MOBILE -->
-                <div class="block lg:hidden">
-                    <div class="grid grid-cols-2 gap-3">
-                        <div class="col-span-2 bg-white shadow-md rounded-lg p-3 text-center">
-                            <div class="text-xl text-orange-500 font-bold font-alex mb-3">MON-FRI OPEN BOWLING</div>
-                            <div>$5/GAME</div>
-                            <div>$30/LANE PER HOUR</div>
+            <div class="col-span-3 grid grid-cols-3 gap-3">
+                <!-- BOWLING -->
+                <!-- HOURS CARD -->
+                <div class="col-span-3 lg:col-span-1 p-4 bg-white border border-gray-200 rounded-lg shadow sm:p-8 dark:bg-gray-800 dark:border-gray-700">
+                    <h5 class="mb-4 text-xl font-bold text-white dark:text-gray-400 bg-black rounded-md p-3">SUMMER HOURS</h5>
+                    <div class="flex flex-col space-y-2">
+                        <div class="flex justify-between items-center">
+                            <div class="text-xl font-bold">MONDAY</div>
+                            <div>CLOSED</div>
                         </div>
-                        <div class="col-span-2 bg-white shadow-md rounded-lg p-3 text-center">
-                            <div class="text-xl text-orange-500 font-bold font-alex">ALL YOU CAN BOWL</div>
-                            <div class="text-xl text-orange-500 font-bold font-alex mb-3">2 HOURS</div>
-                            <div>$14/PER PERSON</div>
-                            <div class="text-xs italic text-gray-500">Monday 5-9P / Wednesday 3-9P / Thursday 4-9P</div>
+                        <div class="flex justify-between items-center">
+                            <div class="text-xl font-bold">TUESDAY</div>
+                            <div class="text-sm lg:text-base">6PM - 9PM</div>
+                        </div>
+                        <div class="flex justify-between items-center">
+                            <div class="text-xl font-bold">WEDNESDAY</div>
+                            <div class="text-sm lg:text-base">CLOSED</div>
+                        </div>
+                        <div class="flex justify-between items-center">
+                            <div class="text-xl font-bold">THURSDAY</div>
+                            <div class="text-sm lg:text-base">9AM to 1PM & 5PM to 9PM</div>
+                        </div>
+                        <div class="flex justify-between items-center">
+                            <div class="text-xl font-bold">FRIDAY</div>
+                            <div class="text-sm lg:text-base">6PM - 9PM</div>
+                        </div>
+                        <div class="flex justify-between items-center">
+                            <div class="text-xl font-bold">SATURDAY</div>
+                            <div class="text-sm lg:text-base">4PM - 9PM</div>
+                        </div>
+                        <div class="flex justify-between items-center">
+                            <div class="text-xl font-bold">SUNDAY</div>
+                            <div class="text-sm lg:text-base">6PM - 9PM</div>
                         </div>
                     </div>
                 </div>
+                @foreach ($bowling as $bowl)
+                <!-- FLOW CARD -->
+                <div class="col-span-3 lg:col-span-1 p-4 bg-white border border-gray-200 rounded-lg shadow sm:p-8 dark:bg-gray-800 dark:border-gray-700">
+                    <h5 class="mb-4 lg:text-xl font-bold text-white dark:text-gray-400 bg-orange-500 rounded-md p-3">{{ $bowl->name }}</h5>
+                    @foreach ($bowl->prices as $price)
+                    <div class="flex items-baseline text-gray-900 dark:text-white mb-4">
+                        <span class="text-3xl font-semibold">$</span>
+                        <span class="text-5xl font-extrabold tracking-tight">{{ Str::of($price)->after('$')->before('/') }}</span>
+                        <span class="ms-1 text-xl font-normal text-gray-500 dark:text-gray-400">/{{ Str::of($price)->after('/') }}</span>
+                    </div>
+                    @endforeach
+
+                    <ul role="list" class="space-y-5 my-7">
+                        @forelse ($bowl->hours as $time)
+                        <li class="flex items-center">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="fill-current size-4 text-blue-500"><!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                                <path d="M464 256A208 208 0 1 1 48 256a208 208 0 1 1 416 0zM0 256a256 256 0 1 0 512 0A256 256 0 1 0 0 256zM232 120V256c0 8 4 15.5 10.7 20l96 64c11 7.4 25.9 4.4 33.3-6.7s4.4-25.9-6.7-33.3L280 243.2V120c0-13.3-10.7-24-24-24s-24 10.7-24 24z" />
+                            </svg>
+                            <span class="text-base font-normal leading-tight text-gray-500 dark:text-gray-400 ms-3">{{ $time }}</span>
+                        </li>
+                        @empty
+                        <li></li>
+                        @endforelse
+
+                        @if (! is_null($bowl->description))
+                        <li class="flex items-center">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="fill-current size-4 text-blue-500"><!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                                <path d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512zM240 80a32 32 0 1 1 0 64 32 32 0 1 1 0-64zM208 208a32 32 0 1 1 64 0 32 32 0 1 1 -64 0zm-64-64a32 32 0 1 1 0 64 32 32 0 1 1 0-64z" />
+                            </svg>
+                            <span class="text-base font-normal leading-tight text-gray-500 dark:text-gray-400 ms-3">{{ $bowl->description }}</span>
+                        </li>
+                        @endif
+                    </ul>
+                </div>
+                <!-- END FLOW CARD -->
+                @endforeach
             </div>
         </section>
 
@@ -169,17 +139,17 @@
             </div>
 
             @forelse ($events as $event)
-                <div class="col-span-3 md:col-span-1 shadow-md rounded-md overflow-hidden">
-                    <div class="flex flex-col">
-                        <img src="{{ $event->awsUrl() }}" alt="" loading="lazy">
-                        <div class="flex flex-col p-4 bg-white dark:bg-gray-800 space-y-3">
-                            <div class="text-2xl font-fig text-center dark:text-gray-400 font-bold uppercase">{{ $event->title }}</div>
-                            <a role="button" href="/specials#{{ $event->slug }}" class="btn p-3">CLICK HERE FOR DETAILS</a>
-                        </div>
+            <div class="col-span-3 md:col-span-1 shadow-md rounded-md overflow-hidden">
+                <div class="flex flex-col">
+                    <img src="{{ $event->awsUrl() }}" alt="" loading="lazy">
+                    <div class="flex flex-col p-4 bg-white dark:bg-gray-800 space-y-3">
+                        <div class="text-2xl font-fig text-center dark:text-gray-400 font-bold uppercase">{{ $event->title }}</div>
+                        <a role="button" href="/specials#{{ $event->slug }}" class="btn p-3">CLICK HERE FOR DETAILS</a>
                     </div>
                 </div>
+            </div>
             @empty
-                <div>NO EVENTS SCHEDULED!</div>
+            <div>NO EVENTS SCHEDULED!</div>
             @endforelse
         </section>
 

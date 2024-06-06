@@ -2,32 +2,36 @@
 
 namespace App\Filament\Resources;
 
-use App\Filament\Resources\NewsletterResource\Pages;
-use App\Filament\Resources\NewsletterResource\RelationManagers;
-use App\Models\Newsletter;
 use Filament\Forms;
-use Filament\Forms\Form;
-use Filament\Resources\Resource;
 use Filament\Tables;
+use App\Models\Bowling;
+use Filament\Forms\Form;
 use Filament\Tables\Table;
+use Filament\Resources\Resource;
+use Filament\Tables\Columns\TextColumn;
+use Filament\Forms\Components\TagsInput;
 use Illuminate\Database\Eloquent\Builder;
+use App\Filament\Resources\BowlingResource\Pages;
 use Illuminate\Database\Eloquent\SoftDeletingScope;
+use App\Filament\Resources\BowlingResource\RelationManagers;
 
-class NewsletterResource extends Resource
+class BowlingResource extends Resource
 {
-    protected static ?string $model = Newsletter::class;
+    protected static ?string $model = Bowling::class;
 
-    protected static ?string $navigationIcon = 'heroicon-o-newspaper';
+    protected static ?string $navigationLabel = 'Bowling';
+
+    protected static ?string $navigationIcon = 'heroicon-o-star';
 
     public static function form(Form $form): Form
     {
         return $form
             ->schema([
-                Forms\Components\TextInput::make('email')
-                    ->email()
+                Forms\Components\TextInput::make('name')
                     ->required(),
-                Forms\Components\Toggle::make('is_subscribed')
-                    ->required(),
+                TagsInput::make('prices'),
+                Forms\Components\TextInput::make('description'),
+                TagsInput::make('hours')
             ]);
     }
 
@@ -35,10 +39,16 @@ class NewsletterResource extends Resource
     {
         return $table
             ->columns([
-                Tables\Columns\TextColumn::make('email')
+                Tables\Columns\TextColumn::make('name')
+                    ->description(fn (Bowling $record): string => $record->description ?? '')
                     ->searchable(),
-                Tables\Columns\IconColumn::make('is_subscribed')
-                    ->boolean(),
+                TextColumn::make('prices')
+                    ->separator(',')
+                    ->badge()
+                    ->color('success'),
+                TextColumn::make('hours')
+                    ->badge()
+                    ->separator(','),
                 Tables\Columns\TextColumn::make('created_at')
                     ->dateTime()
                     ->sortable()
@@ -71,9 +81,9 @@ class NewsletterResource extends Resource
     public static function getPages(): array
     {
         return [
-            'index' => Pages\ListNewsletters::route('/'),
-            'create' => Pages\CreateNewsletter::route('/create'),
-            'edit' => Pages\EditNewsletter::route('/{record}/edit'),
+            'index' => Pages\ListBowlings::route('/'),
+            'create' => Pages\CreateBowling::route('/create'),
+            'edit' => Pages\EditBowling::route('/{record}/edit'),
         ];
     }
 }

@@ -1,5 +1,6 @@
 <?php
 
+use App\Models\Bowling;
 use App\Models\Event;
 use App\Models\Faq;
 use Illuminate\Support\Facades\Route;
@@ -17,7 +18,8 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
     return view('home', [
-        'events' => Event::where('is_on_homepage', true)->get(['title', 'images', 'slug'])
+        'events' => Event::where('is_on_homepage', true)->get(['title', 'images', 'slug']),
+        'bowling' => Bowling::get(),
     ]);
 })->name('home');
 
