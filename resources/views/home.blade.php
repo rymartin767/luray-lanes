@@ -112,7 +112,7 @@
                                 <td>$14/PERSON</td>
                             </tr>
                             <tr class="dark:bg-gray-800 dark:text-white/90 bg-gray-50 border-b border-gray-200">
-                                <td colspan="4" class="italic text-gray-400 py-3">Monday 5-9P / Wednesday 3-9P / Thursday 4-9P</td>
+                                <td colspan="4" class="italic text-gray-400 py-3">Thursday 5-9P / Sunday 6-9P</td>
                             </tr>
                             <tr class="dark:bg-gray-800 dark:text-white/90 bg-white border-b border-gray-200">
                                 <td class="py-3">THURSDAY SENIOR SPECIAL</td>
@@ -125,12 +125,12 @@
                                 <td>$30/Lane</td>
                             </tr>
                             <tr class="dark:bg-gray-800 dark:text-white/90 bg-white">
-                                <td class="pt-3">SUNDAY FAMILY FUN DAY</td>
+                                <td class="pt-3">SATURDAY FAMILY FUN DAY</td>
                                 <td></td>
                                 <td>$65/Lane</td>
                             </tr>
                             <tr class="dark:bg-gray-800 dark:text-white/90 bg-white border-b border-gray-200">
-                                <td colspan="4" class="py-3 italic text-gray-400">Includes 1 Lane for 2 hours + Shoes + Pizza</td>
+                                <td colspan="4" class="py-3 italic text-gray-400">Includes 1 Lane for 2 hours + Shoes + Pizza / 4-6P</td>
                             </tr>
                             <tr class="bg-gray-50 dark:bg-gray-800 dark:text-white/90">
                                 <td class="pt-3">BIRTHDAY PACKAGE</td>
