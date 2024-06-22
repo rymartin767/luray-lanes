@@ -7,9 +7,6 @@
             </a>
             <ul class="flex flex-col lg:flex-row space-y-4 lg:space-y-0 flex-wrap items-center mb-6 text-lg lg:text-sm font-alex font-medium text-gray-400 sm:mb-0 dark:text-gray-400">
                 <li>
-                    <a href="/reservations" wire:navigate class="hover:underline lg:mr-6 ">Reserve A Lane</a>
-                </li>
-                <li>
                     <a href="/birthdays" wire:navigate class="hover:underline lg:mr-6">Birthdays</a>
                 </li>
                 <li>
@@ -52,13 +49,6 @@
 
             <div class="flex flex-row items-center space-x-1 mx-auto lg:mx-0 justify-center">
                 <div class="text-sm text-gray-600">Designed with</div>
-                <span>
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="fill-current text-red-500 h-3 w-3">
-                        <!--! Font Awesome Pro 6.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc.-->
-                        <path d="M0 190.9v-5.8c0-69.9 50.52-129.52 119.4-141 44.7-7.59 92 7.27 124.6 39.92L256 96l11.1-11.98C300.6 51.37 347 36.51 392.6 44.1c68.9 11.48 119.4 71.1 119.4 141v5.8c0 41.5-17.2 81.2-47.6 109.5L283.7 469.1c-7.5 7-17.4 10.9-27.7 10.9s-20.2-3.9-27.7-10.9L47.59 300.4C17.23 272.1 0 232.4 0 190.9z" />
-                    </svg>
-                </span>
-                <div class="dark:text-gray-50">+</div>
                 <span>
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="fill-current text-red-600 h-3 w-3">
                         <!--! Font Awesome Pro 6.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc.-->

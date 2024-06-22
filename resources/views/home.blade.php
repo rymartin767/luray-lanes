@@ -10,16 +10,6 @@
             <div class="col-span-5">
                 <div class="section-title">ATTRACTIONS</div>
             </div>
-            <div class="col-span-5 lg:col-span-1 shadow-md dark:shadow-none rounded-md overflow-hidden">
-                <div class="flex flex-col flex-wrap h-full">
-                    <img src="{{ asset('site-images/league.webp') }}" alt="">
-                    <div class="flex flex-col flex-grow flex-wrap p-3 bg-white dark:bg-gray-800 place-content-center">
-                        <div role="button" class="btn p-1">
-                            <a href="{{ route('reservations') }}">RESERVE A LANE</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
             <div class="col-span-5 lg:col-span-1 shadow-md rounded-md overflow-hidden">
                 <div class="flex flex-col flex-wrap h-full">
                     <img src="{{ asset('site-images/birthday.webp') }}" alt="">

@@ -15,9 +15,6 @@
                     <x-nav-link wire:navigate.hover href="{{ route('home') }}" :active="request()->routeIs('home')">
                         {{ __('Home') }}
                     </x-nav-link>
-                    <x-nav-link wire:navigate.hover href="{{ route('reservations') }}" :active="request()->routeIs('reservations')">
-                        {{ __('Reserve A Lane') }}
-                    </x-nav-link>
                     <x-nav-link wire:navigate.hover href="{{ route('birthdays') }}" :active="request()->routeIs('birthdays')">
                         {{ __('Birthdays') }}
                     </x-nav-link>
@@ -102,9 +99,6 @@
         <div class="pt-2 pb-3 space-y-1">
             <x-responsive-nav-link href="{{ route('home') }}" :active="request()->routeIs('home')">
                 {{ __('Home') }}
-            </x-responsive-nav-link>
-            <x-responsive-nav-link href="{{ route('reservations') }}" :active="request()->routeIs('reservations')">
-                {{ __('Reserve A Lane') }}
             </x-responsive-nav-link>
             <x-responsive-nav-link href="{{ route('birthdays') }}" :active="request()->routeIs('birthdays')">
                 {{ __('Birthdays') }}
