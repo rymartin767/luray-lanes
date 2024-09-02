@@ -41,14 +41,15 @@ class BowlingResource extends Resource
             ->columns([
                 Tables\Columns\TextColumn::make('name')
                     ->description(fn (Bowling $record): string => $record->description ?? '')
-                    ->searchable(),
+                    ->searchable()
+                    ->label('Name: Day'),
+                TextColumn::make('hours')
+                    ->badge()
+                    ->separator(','),
                 TextColumn::make('prices')
                     ->separator(',')
                     ->badge()
                     ->color('success'),
-                TextColumn::make('hours')
-                    ->badge()
-                    ->separator(','),
                 Tables\Columns\TextColumn::make('created_at')
                     ->dateTime()
                     ->sortable()

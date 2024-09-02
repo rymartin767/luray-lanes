@@ -142,14 +142,11 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-span-2 lg:col-span-1">
-                    <img src="{{ asset('site-images/buckets.jpg') }}" alt="" class="rounded-md">
-                </div>
-                <div class="col-span-2 lg:col-span-1">
-                    <img src="{{ asset('site-images/sipper.jpg') }}" alt="" class="rounded-md">
-                </div>
             </div>
         </section>
+
+        <!-- FLYERS -->
+         @include('flyers')
             
     </div>
 </x-app-layout>
