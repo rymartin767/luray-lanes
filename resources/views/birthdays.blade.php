@@ -25,13 +25,13 @@
                         <div class="font-alex uppercase text-4xl dark:text-gray-50">The "Strike" Package</div>
                         <div class="uppercase text-orange-500">Create the perfect day</div>
                         <ul class="py-4 list-inside list-disc dark:text-gray-50">
-                            <li>One Lane for 1 Hour of bowling</li>
+                            <li>One Lane for 2 Hours of bowling</li>
                             <li>Maximum 6 Bowlers per lane</li>
                             <li>Rental Shoes</li>
                             <li>One Pitcher of soda</li>
                         </ul>
                         <div class="text-3xl text-orange-500 font-bold">ALL FOR</div>
-                        <div class="text-8xl text-orange-500 font-bold">$60!</div>
+                        <div class="text-8xl text-orange-500 font-bold">$100!</div>
                     </div>
                 </div>
                 <div class="col-span-4 md:col-span-1 mt-6 bg-white dark:bg-gray-700 rounded-xl shadow-lg">
@@ -39,8 +39,8 @@
                         <div class="font-alex uppercase text-xl dark:text-gray-50 mb-2">Pin Sipper Cup</div>
                         <img src="{{ asset('site-images/sipper.webp') }}" alt="" class="mb-2 rounded-md shadow-sm" loading="lazy">
                         <div class="uppercase text-orange-500">GIFT ITEMS</div>
-                        <div class="text-sm italic text-gray-400">$8.50 Each (Empty)</div>
-                        <div class="text-sm italic text-gray-400">$9.50 Each (w/Soda)</div>
+                        <div class="text-sm italic text-gray-400 dark:text-white/80">$9.00 Each (Empty)</div>
+                        <div class="text-sm italic text-gray-400 dark:text-white/80">$10.00 Each (w/Soda)</div>
                     </div>
                 </div>
             </div>

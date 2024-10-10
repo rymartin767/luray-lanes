@@ -5,7 +5,7 @@
 
     <div class="hidden lg:block col-span-4 my-3 bg-white dark:bg-gray-800 rounded-lg py-3 border border-gray-50 shadow-sm">
         <div class="text-6xl text-center font-alex">
-            <span class="text-black dark:text-gray-900">EAT.</span>
+            <span class="text-black dark:text-white">EAT.</span>
             <span class="text-gray-400">DRINK.</span>
             <span class="text-orange-500">BOWL.</span>
         </div>
