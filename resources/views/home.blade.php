@@ -75,7 +75,7 @@
                                 </div>
                                 @foreach ($model->prices as $price)
                                     <div class="font-fig">
-                                        <div class="pl-6 font-bold text-xl text-white/80">
+                                        <div class="pl-6 font-bold text-xl dark:text-white/80">
                                             {{ $price }}
                                         </div>
                                     </div>
