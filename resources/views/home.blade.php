@@ -61,7 +61,13 @@
                         @endforeach
                     </div>
                 </div>
-                @foreach ($bowling->groupBy('name') as $day => $bowling)
+                @php
+                    $daysOfWeek = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday'];
+                    $sortedBowling = $bowling->groupBy('name')->sortBy(function($item, $key) use ($daysOfWeek) {
+                        return array_search($key, $daysOfWeek);
+                    });
+                @endphp
+                @foreach ($sortedBowling as $day => $bowling)
                     <!-- FLOW CARD -->
                     <div class="col-span-3 lg:col-span-1 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
                         <h5 class="mb-4 lg:text-2xl uppercase bg-black text-white rounded-t-md font-alex font-bold dark:text-white/90 text-center p-3 border-b-4 border-orange-500">{{ $day }}</h5>
