@@ -26,7 +26,7 @@
                         <div class="uppercase text-orange-500">Create the perfect day</div>
                         <ul class="py-4 list-inside list-disc dark:text-gray-50">
                             <li>One Lane for 2 Hours of bowling</li>
-                            <li>Maximum 6 Bowlers per lane</li>
+                            <li>Maximum 7 Bowlers per lane</li>
                             <li>Rental Shoes</li>
                             <li>One Pitcher of soda</li>
                         </ul>
