@@ -47,11 +47,11 @@
             <div class="col-span-3">
                 <div class="section-title">OPEN BOWLING</div>
             </div>
-            <div class="col-span-3 italic">Summer hours start on April 28th and are subject to change due to our business needs.</div>
+            <div class="col-span-3 italic">Fall hours start on September 1st and are subject to change due to our business needs.</div>
             <div class="col-span-3 grid grid-cols-3 gap-3">
                 <!-- HOURS CARD -->
                 <div class="col-span-3 lg:col-span-1 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
-                    <h5 class="mb-4 lg:text-2xl uppercase bg-orange-600 text-white rounded-t-md font-alex font-bold dark:text-white/90 text-center p-3 border-b-4 border-black">SPRING / SUMMER 2025 HOURS</h5>
+                    <h5 class="mb-4 lg:text-2xl uppercase bg-orange-600 text-white rounded-t-md font-alex font-bold dark:text-white/90 text-center p-3 border-b-4 border-black">FALL 2025 HOURS</h5>
                     <div class="flex flex-col space-y-2 py-3 px-6">
                         @foreach (config('general.hours') as $day => $hours)
                             <div class="flex justify-between items-center dark:text-white/90">
