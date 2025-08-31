@@ -124,7 +124,7 @@
                     
                 </div>
                 <div class="col-span-2 lg:col-span-1">
-                    <img src="{{ asset('site-images/menu.jpg') }}" alt="" class="rounded-md">
+                    <img src="{{ asset('site-images/2025-menu.jpg') }}" alt="" class="rounded-md">
                 </div>
                 <div class="col-span-2">
                     <div class="grid grid-cols-4 gap-3">
