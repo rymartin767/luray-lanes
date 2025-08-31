@@ -71,7 +71,7 @@
                     </div>
 
                     <!-- GIONINO PIZZA -->
-                    <div class="p-3 h-40 lg:h-1/2 rounded-md" style="background-image: url('site-images/gionino.jpg');">
+                    <div class="p-3 h-40 lg:h-1/2 rounded-md" style="background-image: url('site-images/pizza.webp');">
 
                         <!-- GIONINOS MODAL START -->
                         <div x-data="{ show: false }">
