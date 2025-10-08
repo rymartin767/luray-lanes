@@ -2,23 +2,19 @@
 
 namespace App\Filament\Resources;
 
-use Filament\Forms;
-use Filament\Tables;
+use App\Filament\Resources\EventResource\Pages;
+use App\Filament\Resources\EventResource\RelationManagers\FaqsRelationManager;
 use App\Models\Event;
-use Filament\Forms\Form;
-use Filament\Tables\Table;
-use Filament\Resources\Resource;
-use Filament\Tables\Columns\IconColumn;
-use Filament\Tables\Columns\TextColumn;
-use Filament\Forms\Components\TextInput;
-use Filament\Tables\Columns\ImageColumn;
+use Filament\Forms;
 use Filament\Forms\Components\FileUpload;
 use Filament\Forms\Components\RichEditor;
-use Illuminate\Database\Eloquent\Builder;
-use App\Filament\Resources\EventResource\Pages;
-use Illuminate\Database\Eloquent\SoftDeletingScope;
-use App\Filament\Resources\EventResource\RelationManagers;
-use App\Filament\Resources\EventResource\RelationManagers\FaqsRelationManager;
+use Filament\Forms\Form;
+use Filament\Resources\Resource;
+use Filament\Tables;
+use Filament\Tables\Columns\IconColumn;
+use Filament\Tables\Columns\ImageColumn;
+use Filament\Tables\Columns\TextColumn;
+use Filament\Tables\Table;
 
 class EventResource extends Resource
 {
@@ -50,7 +46,7 @@ class EventResource extends Resource
                     ->required(),
                 Forms\Components\Toggle::make('is_on_homepage')
                     ->required(),
-                
+
             ])->columns(3);
     }
 
@@ -84,7 +80,7 @@ class EventResource extends Resource
                     ->toggleable(isToggledHiddenByDefault: true),
                 TextColumn::make('faqs_count')
                     ->counts('faqs')
-                    ->label('FAQS')
+                    ->label('FAQS'),
             ])
             ->filters([
                 //
@@ -98,14 +94,14 @@ class EventResource extends Resource
                 ]),
             ]);
     }
-    
+
     public static function getRelations(): array
     {
         return [
-            FaqsRelationManager::class
+            FaqsRelationManager::class,
         ];
     }
-    
+
     public static function getPages(): array
     {
         return [
@@ -113,5 +109,5 @@ class EventResource extends Resource
             'create' => Pages\CreateEvent::route('/create'),
             'edit' => Pages\EditEvent::route('/{record}/edit'),
         ];
-    }    
+    }
 }

@@ -13,6 +13,6 @@ class Bowling extends Model
 
     protected $casts = [
         'prices' => 'array',
-        'hours' => 'array'
+        'hours' => 'array',
     ];
 }

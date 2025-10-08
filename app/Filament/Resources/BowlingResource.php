@@ -2,18 +2,15 @@
 
 namespace App\Filament\Resources;
 
-use Filament\Forms;
-use Filament\Tables;
-use App\Models\Bowling;
-use Filament\Forms\Form;
-use Filament\Tables\Table;
-use Filament\Resources\Resource;
-use Filament\Tables\Columns\TextColumn;
-use Filament\Forms\Components\TagsInput;
-use Illuminate\Database\Eloquent\Builder;
 use App\Filament\Resources\BowlingResource\Pages;
-use Illuminate\Database\Eloquent\SoftDeletingScope;
-use App\Filament\Resources\BowlingResource\RelationManagers;
+use App\Models\Bowling;
+use Filament\Forms;
+use Filament\Forms\Components\TagsInput;
+use Filament\Forms\Form;
+use Filament\Resources\Resource;
+use Filament\Tables;
+use Filament\Tables\Columns\TextColumn;
+use Filament\Tables\Table;
 
 class BowlingResource extends Resource
 {
@@ -31,7 +28,7 @@ class BowlingResource extends Resource
                     ->required(),
                 TagsInput::make('prices'),
                 Forms\Components\TextInput::make('description'),
-                TagsInput::make('hours')
+                TagsInput::make('hours'),
             ]);
     }
 

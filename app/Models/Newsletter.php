@@ -12,6 +12,6 @@ class Newsletter extends Model
     protected $guarded = [];
 
     protected $casts = [
-        'is_subscribed' => 'boolean'
+        'is_subscribed' => 'boolean',
     ];
 }

@@ -2,15 +2,11 @@
 
 namespace App\Filament\Resources\EventResource\RelationManagers;
 
-use Filament\Forms;
-use Filament\Tables;
-use Filament\Forms\Form;
-use Filament\Tables\Table;
-use Filament\Forms\Components\TextInput;
 use Filament\Forms\Components\RichEditor;
-use Illuminate\Database\Eloquent\Builder;
-use Illuminate\Database\Eloquent\SoftDeletingScope;
+use Filament\Forms\Form;
 use Filament\Resources\RelationManagers\RelationManager;
+use Filament\Tables;
+use Filament\Tables\Table;
 
 class FaqsRelationManager extends RelationManager
 {
@@ -25,7 +21,7 @@ class FaqsRelationManager extends RelationManager
                     ->maxLength(255),
                 RichEditor::make('answer')
                     ->required()
-                    ->maxLength(255)
+                    ->maxLength(255),
             ]);
     }
 

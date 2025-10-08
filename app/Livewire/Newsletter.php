@@ -2,9 +2,9 @@
 
 namespace App\Livewire;
 
-use Livewire\Component;
-use Livewire\Attributes\Rule;
 use App\Models\Newsletter as ModelsNewsletter;
+use Livewire\Attributes\Rule;
+use Livewire\Component;
 
 class Newsletter extends Component
 {
@@ -24,6 +24,7 @@ class Newsletter extends Component
         ModelsNewsletter::create(['email' => $this->email]);
 
         session()->flash('flash.banner', 'Successfully subscribed!.');
+
         return $this->redirect('/');
     }
 }

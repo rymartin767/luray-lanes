@@ -2,11 +2,11 @@
 
 namespace App\Models;
 
-use Illuminate\Support\Str;
-use Illuminate\Database\Eloquent\Model;
-use Illuminate\Support\Facades\Storage;
-use Illuminate\Database\Eloquent\Relations\Relation;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
+use Illuminate\Database\Eloquent\Model;
+use Illuminate\Database\Eloquent\Relations\Relation;
+use Illuminate\Support\Facades\Storage;
+use Illuminate\Support\Str;
 
 class Event extends Model
 {
@@ -17,7 +17,7 @@ class Event extends Model
     protected $casts = [
         'is_visible' => 'boolean',
         'is_on_homepage' => 'boolean',
-        'images' => 'array'
+        'images' => 'array',
     ];
 
     protected static function booted(): void
@@ -31,12 +31,12 @@ class Event extends Model
         });
     }
 
-    public function awsUrl() : string
+    public function awsUrl(): string
     {
         return Storage::disk('s3')->url($this->images[0]);
     }
 
-    public function faqs() : Relation
+    public function faqs(): Relation
     {
         return $this->hasMany(Faq::class, 'event_id', 'id');
     }
