@@ -27,7 +27,12 @@
 }
 
 .section-title {
-    @apply text-4xl font-alex border-l-4 border-orange-500 pl-3 dark:text-gray-50;
+    @apply text-4xl lg:text-5xl font-alex font-bold bg-gradient-to-r from-orange-500 via-orange-600 to-orange-700 bg-clip-text text-transparent dark:from-orange-400 dark:via-orange-500 dark:to-orange-600 relative pl-6;
+}
+
+.section-title::before {
+    content: '';
+    @apply absolute left-0 top-1/2 -translate-y-1/2 w-1 h-12 bg-gradient-to-b from-orange-400 via-orange-600 to-orange-800 rounded-full shadow-lg;
 }
 
 .faq-button {
